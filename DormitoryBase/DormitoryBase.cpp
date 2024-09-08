@@ -14,14 +14,7 @@ private:
 
 public:
 
-    student() {
-        SNP = "";
-        age = 0;
-        OPT = 0;
-        phoneNumber = "";
-        studActive = 0;
-        blockNumber = 0;
-    }
+    student(): SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
     string getSNP() {
         return SNP;
     }
@@ -111,7 +104,7 @@ public:
     student data;
     Node* next;
 
-    Node(student studentData) : data(studentData), next(NULL) {}
+    explicit Node(student studentData) : data(studentData), next(NULL) {}
 };
 
 class StudentList {
@@ -156,6 +149,7 @@ public:
             cout << "Студент " << counter << endl;
             current->data.printInfo();
             cout << endl;
+            counter++;
             current = current->next;
         }
     }
