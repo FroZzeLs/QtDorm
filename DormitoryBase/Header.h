@@ -15,7 +15,7 @@ private:
 
 public:
 
-    student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {};
+    student();
     string getSNP();
 
     int getAge();

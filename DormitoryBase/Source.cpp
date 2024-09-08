@@ -1,4 +1,6 @@
 #include "Header.h"
+
+student::student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
    
 string student::getSNP() {
     return SNP;
