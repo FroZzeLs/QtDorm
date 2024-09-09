@@ -1,46 +1,34 @@
 #pragma once
+
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 class student {
 private:
-    string SNP;
+    std::string SNP;
     int age;
     int OPT;
-    string phoneNumber;
-    int studActive;		// 0 - не является активистом, 1 - Студсовет, 2 - ДД
+    std::string phoneNumber;
+    int studActive; // 0 - не является активистом, 1 - Студсовет, 2 - ДД
     int blockNumber;
 
 public:
-
     student();
-    string getSNP();
 
-    int getAge();
+    std::string getSNP() const;
+    int getAge() const;
+    int getOPT() const;
+    std::string getPhoneNumber() const;
+    int getStudActive() const;
+    int getBlockNumber() const;
 
-    int getOPT();
-
-    string getPhoneNumber();
-
-    int getStudActive();
-
-    int getBlockNumber();
-
-    void setSNP(string studentsSNP);
-
+    void setSNP(const std::string& studentsSNP);
     void setAge(int studentsAge);
-
     void setOPT(int studentsOPT);
-
-    void setPhoneNumber(string studentsPhoneNumber);
-
+    void setPhoneNumber(const std::string& studentsPhoneNumber);
     void setStudActive(int activityType);
-
     void setBlockNumber(int studentsBlock);
 
     void inputInfo();
-
-    void printInfo();
+    void printInfo() const;
 };

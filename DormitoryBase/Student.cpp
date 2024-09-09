@@ -6,31 +6,31 @@ using namespace std;
 
 student::student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
    
-string student::getSNP() {
+string student::getSNP() const {
     return SNP;
 }
 
-int student::getAge() {
+int student::getAge() const{
     return age;
 }
 
-int student::getOPT() {
+int student::getOPT() const {
     return OPT;
 }
 
-string student::getPhoneNumber() {
+string student::getPhoneNumber() const {
     return phoneNumber;
 }
 
-int student::getStudActive() {
+int student::getStudActive() const {
     return studActive;
 }
 
-int student::getBlockNumber() {
+int student::getBlockNumber() const {
     return blockNumber;
 }
 
-void student::setSNP(string studentsSNP) {
+void student::setSNP(const string& studentsSNP) {
     SNP = studentsSNP;
 }
 
@@ -42,7 +42,7 @@ void student::setOPT(int studentsOPT) {
     OPT = studentsOPT;
 }
 
-void student::setPhoneNumber(string studentsPhoneNumber) {
+void student::setPhoneNumber(const string& studentsPhoneNumber) {
     phoneNumber = studentsPhoneNumber;
 }
 
@@ -81,7 +81,7 @@ void student::inputInfo() {
 
 }
 
-void student::printInfo() {
+void student::printInfo() const {
     cout << "ФИО: " << SNP << endl;
     cout << "Номер блока: " << blockNumber << endl;
     cout << "Возраст: " << age << endl;
