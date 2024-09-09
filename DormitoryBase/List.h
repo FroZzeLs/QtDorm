@@ -10,7 +10,7 @@ public:
     student data;
     Node* next;
 
-    explicit Node(student studentData);
+    Node(student studentData);
 };
 
 class StudentList {
@@ -19,20 +19,14 @@ private:
 
 public:
     StudentList();
-
     ~StudentList();
 
     void insert(student studentData);
-
-    void printList();
-
-    student* searchStudent(string targetSNP);
-
-    void printStudentBySNP(student* target);
-
-    void editStudent(string targetSNP);
-
-    void removeStudent(string targetSNP);
-
+    void printList() const;
+    student* searchStudent(const std::string& targetSNP) const;
+    void printStudentBySNP(student* target) const;
+    void editStudent(const std::string& targetSNP);
+    void removeStudent(const std::string& targetSNP);
     void removeAllStudents();
 };
+

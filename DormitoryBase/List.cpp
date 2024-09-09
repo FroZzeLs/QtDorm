@@ -4,16 +4,12 @@
 
 using namespace std;
 
-Node::Node(student studentData) : data(studentData), next(NULL) {}
+Node::Node(student studentData) : data(studentData), next(nullptr) {}
 
-StudentList::StudentList() : head(NULL) {}
+StudentList::StudentList() : head(nullptr) {}
 
 StudentList::~StudentList() {
-    while (head) {
-        Node* temp = head;
-        head = head->next;
-        delete temp;
-    }
+    removeAllStudents();
 }
 
 void StudentList::insert(student studentData) {
@@ -32,7 +28,7 @@ void StudentList::insert(student studentData) {
     current->next = newNode;
 }
 
-void StudentList::printList() {
+void StudentList::printList() const {
     if (!head) {
         cout << "Студентов в базе нет!" << endl;
         return;
@@ -43,25 +39,23 @@ void StudentList::printList() {
         cout << "Студент " << counter << endl;
         current->data.printInfo();
         cout << endl;
-        counter++;
         current = current->next;
+        counter++;
     }
 }
 
-student* StudentList::searchStudent(string targetSNP) {
+student* StudentList::searchStudent(const string& targetSNP) const {
     Node* current = head;
     while (current) {
         if (current->data.getSNP() == targetSNP)
             return &current->data;
-
         current = current->next;
     }
-    return NULL;
+    return nullptr;
 }
 
-void StudentList::printStudentBySNP(student* target) {
-    if (target == NULL)
-    {
+void StudentList::printStudentBySNP(student* target) const {
+    if (!target) {
         cout << "Студент с данным ФИО не найден." << endl;
         return;
     }
@@ -69,23 +63,22 @@ void StudentList::printStudentBySNP(student* target) {
     target->printInfo();
 }
 
-void StudentList::editStudent(string targetSNP) {
+void StudentList::editStudent(const string& targetSNP) {
     student* foundStudent = searchStudent(targetSNP);
     if (foundStudent) {
         cout << "Редактирование информации о студенте: " << targetSNP << endl;
         foundStudent->inputInfo();
     }
-    else
+    else {
         cout << "Студент с ФИО '" << targetSNP << "' не найден." << endl;
-
+    }
 }
 
-void StudentList::removeStudent(string targetSNP) {
+void StudentList::removeStudent(const string& targetSNP) {
     if (!head) {
         cout << "Студентов в базе нет!" << endl;
         return;
     }
-
 
     if (head->data.getSNP() == targetSNP) {
         Node* temp = head;
