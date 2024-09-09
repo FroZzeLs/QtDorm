@@ -4,10 +4,8 @@
 
 using namespace std;
 
-student::student(const std::string& studentsSNP, int studentsAge, int studentsOPT,
-    const std::string& studentsPhoneNumber, int activityType, int studentsBlock) : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
-    phoneNumber(studentsPhoneNumber), studActive(activityType), blockNumber(studentsBlock) {}
-   
+student::student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
+
 string student::getSNP() const {
     return SNP;
 }

@@ -13,9 +13,7 @@ private:
     int blockNumber;
 
 public:
-    student(const std::string& studentsSNP, int studentsAge, int studentsOPT,
-        const std::string& studentsPhoneNumber, int activityType, int studentsBlock) : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
-        phoneNumber(studentsPhoneNumber) {}
+    student();
 
     std::string getSNP() const;
     int getAge() const;
