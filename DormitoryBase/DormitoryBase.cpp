@@ -1,5 +1,8 @@
-﻿#include "Header.h"
+﻿#include "main.h"
+#include "List.h"
+#include "Student.h"
 
+using namespace std;
 
 int main() {
     system("chcp 1251");
