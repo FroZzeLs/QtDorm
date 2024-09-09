@@ -2,8 +2,6 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 Node::Node(student studentData) : data(studentData), next(nullptr) {}
 
 StudentList::StudentList() : head(nullptr) {}
@@ -30,21 +28,21 @@ void StudentList::insert(student studentData) {
 
 void StudentList::printList() const {
     if (!head) {
-        cout << "Студентов в базе нет!" << endl;
+        std::cout << "Студентов в базе нет!" << std::endl;
         return;
     }
     Node* current = head;
     int counter = 1;
     while (current) {
-        cout << "Студент " << counter << endl;
+        std::cout << "Студент " << counter << std::endl;
         current->data.printInfo();
-        cout << endl;
+        std::cout << std::endl;
         current = current->next;
         counter++;
     }
 }
 
-student* StudentList::searchStudent(const string& targetSNP) const {
+student* StudentList::searchStudent(const std::string& targetSNP) const {
     Node* current = head;
     while (current) {
         if (current->data.getSNP() == targetSNP)
@@ -56,27 +54,27 @@ student* StudentList::searchStudent(const string& targetSNP) const {
 
 void StudentList::printStudentBySNP(student* target) const {
     if (!target) {
-        cout << "Студент с данным ФИО не найден." << endl;
+        std::cout << "Студент с данным ФИО не найден." << std::endl;
         return;
     }
-    cout << "Искомый студент:" << endl;
+    std::cout << "Искомый студент:" << std::endl;
     target->printInfo();
 }
 
-void StudentList::editStudent(const string& targetSNP) {
+void StudentList::editStudent(const std::string& targetSNP) {
     student* foundStudent = searchStudent(targetSNP);
     if (foundStudent) {
-        cout << "Редактирование информации о студенте: " << targetSNP << endl;
+        std::cout << "Редактирование информации о студенте: " << targetSNP << std::endl;
         foundStudent->inputInfo();
     }
     else {
-        cout << "Студент с ФИО '" << targetSNP << "' не найден." << endl;
+        std::cout << "Студент с ФИО '" << targetSNP << "' не найден." << std::endl;
     }
 }
 
-void StudentList::removeStudent(const string& targetSNP) {
+void StudentList::removeStudent(const std::string& targetSNP) {
     if (!head) {
-        cout << "Студентов в базе нет!" << endl;
+        std::cout << "Студентов в базе нет!" << std::endl;
         return;
     }
 
@@ -84,7 +82,7 @@ void StudentList::removeStudent(const string& targetSNP) {
         Node* temp = head;
         head = head->next;
         delete temp;
-        cout << "Студент с ФИО '" << targetSNP << "' удален." << endl;
+        std::cout << "Студент с ФИО '" << targetSNP << "' удален." << std::endl;
         return;
     }
 
@@ -94,12 +92,12 @@ void StudentList::removeStudent(const string& targetSNP) {
             Node* temp = current->next;
             current->next = current->next->next;
             delete temp;
-            cout << "Студент с ФИО '" << targetSNP << "' удален." << endl;
+            std::cout << "Студент с ФИО '" << targetSNP << "' удален." << std::endl;
             return;
         }
         current = current->next;
     }
-    cout << "Студент с ФИО '" << targetSNP << "' не найден. Проверьте правильность ввода." << endl;
+    std::cout << "Студент с ФИО '" << targetSNP << "' не найден. Проверьте правильность ввода." << std::endl;
 }
 
 void StudentList::removeAllStudents() {
@@ -108,5 +106,5 @@ void StudentList::removeAllStudents() {
         head = head->next;
         delete temp;
     }
-    cout << "Все студенты удалены." << endl;
+    std::cout << "Все студенты удалены." << std::endl;
 }

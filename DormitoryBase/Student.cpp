@@ -2,15 +2,13 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 student::student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
 
-string student::getSNP() const {
+std::string student::getSNP() const {
     return SNP;
 }
 
-int student::getAge() const{
+int student::getAge() const {
     return age;
 }
 
@@ -18,7 +16,7 @@ int student::getOPT() const {
     return OPT;
 }
 
-string student::getPhoneNumber() const {
+std::string student::getPhoneNumber() const {
     return phoneNumber;
 }
 
@@ -30,7 +28,7 @@ int student::getBlockNumber() const {
     return blockNumber;
 }
 
-void student::setSNP(const string& studentsSNP) {
+void student::setSNP(const std::string& studentsSNP) {
     SNP = studentsSNP;
 }
 
@@ -42,7 +40,7 @@ void student::setOPT(int studentsOPT) {
     OPT = studentsOPT;
 }
 
-void student::setPhoneNumber(const string& studentsPhoneNumber) {
+void student::setPhoneNumber(const std::string& studentsPhoneNumber) {
     phoneNumber = studentsPhoneNumber;
 }
 
@@ -55,36 +53,35 @@ void student::setBlockNumber(int studentsBlock) {
 }
 
 void student::inputInfo() {
-    cout << "Введите ФИО студента: ";
-    cin.ignore();
-    getline(cin, SNP);
+    std::cout << "Введите ФИО студента: ";
+    std::cin.ignore();
+    std::getline(std::cin, SNP);
 
-    cout << "Введите номер блока: ";
-    cin >> blockNumber;
+    std::cout << "Введите номер блока: ";
+    std::cin >> blockNumber;
 
-    cout << "Введите возраст: ";
-    cin >> age;
+    std::cout << "Введите возраст: ";
+    std::cin >> age;
 
-    cout << "Введите номер телефона: ";
-    cin.ignore();
-    getline(cin, phoneNumber);
+    std::cout << "Введите номер телефона: ";
+    std::cin.ignore();
+    std::getline(std::cin, phoneNumber);
 
-    cout << "Введите статус студента (0 - не активист, 1 - член студсовета, 2 - ДД): ";
-    cin >> studActive;
+    std::cout << "Введите статус студента (0 - не активист, 1 - член студсовета, 2 - ДД): ";
+    std::cin >> studActive;
 
     if (studActive != 0)
         OPT = 36;
     else {
-        cout << "Введите количество отработанных часов ОПТ: ";
-        cin >> OPT;
+        std::cout << "Введите количество отработанных часов ОПТ: ";
+        std::cin >> OPT;
     }
-
 }
 
 void student::printInfo() const {
-    cout << "ФИО: " << SNP << endl;
-    cout << "Номер блока: " << blockNumber << endl;
-    cout << "Возраст: " << age << endl;
-    cout << "Отработанные часы ОПТ: " << OPT << endl;
-    cout << "Номер телефона: " << phoneNumber << endl;
+    std::cout << "ФИО: " << SNP << std::endl;
+    std::cout << "Номер блока: " << blockNumber << std::endl;
+    std::cout << "Возраст: " << age << std::endl;
+    std::cout << "Отработанные часы ОПТ: " << OPT << std::endl;
+    std::cout << "Номер телефона: " << phoneNumber << std::endl;
 }
