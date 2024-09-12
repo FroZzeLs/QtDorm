@@ -1,12 +1,12 @@
 #include "List.h"
 
-Node::Node(const student studentData) : data(studentData) {}
+Node::Node(const student& studentData) : data(studentData) {}
 
 StudentList::~StudentList() {
     removeAllStudents();
 }
 
-void StudentList::insert(const student studentData) {
+void StudentList::insert(const student& studentData) {
     Node* newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
         newNode->next = head;
@@ -48,7 +48,7 @@ student* StudentList::searchStudent(const std::string& targetSNP) const {
     return nullptr;
 }
 
-void StudentList::printStudentBySNP(student* target) const {
+void StudentList::printStudentBySNP(const student* target) const {
     if (!target) {
         std::cout << "Студент с данным ФИО не найден." << std::endl;
         return;

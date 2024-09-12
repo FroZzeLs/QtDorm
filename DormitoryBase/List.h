@@ -8,7 +8,7 @@ public:
     student data;
     Node* next = nullptr;
 
-    Node(const student studentData);
+    explicit Node(const student& studentData);
 };
 
 class StudentList {
@@ -18,10 +18,10 @@ private:
 public:
     ~StudentList();
 
-    void insert(const student studentData);
+    void insert(const student& studentData);
     void printList() const;
     student* searchStudent(const std::string& targetSNP) const;
-    void printStudentBySNP(student* target) const;
+    void printStudentBySNP(const student* target) const;
     void editStudent(const std::string& targetSNP);
     void removeStudent(const std::string& targetSNP);
     void removeAllStudents();
