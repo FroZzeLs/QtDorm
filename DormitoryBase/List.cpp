@@ -54,10 +54,10 @@ void StudentList::printStudentBySNP(const student* target) const {
 }
 
 void StudentList::editStudent(const std::string& targetSNP) {
-    student* foundStudent = searchStudent(targetSNP);
-    if (foundStudent) {
+    student* foundedStudent = searchStudent(targetSNP);
+    if (foundedStudent) {
         std::cout << "Редактирование информации о студенте: " << targetSNP << std::endl;
-        foundStudent->inputInfo();
+        foundedStudent->inputInfo();
     }
     else {
         std::cout << "Студент с ФИО '" << targetSNP << "' не найден." << std::endl;

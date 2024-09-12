@@ -11,6 +11,7 @@ int main() {
     while (choice != 0) {
         std::cout << "Выберите действие:\n1 - Добавить студента\n2 - Вывести информацию по всем студентам\n3 - Найти информацию по одному студенту\n4 - Изменить данные студента\n5 - Удалить студента по ФИО\n6 - Удалить всех студентов\n0 - завершить программу" << std::endl;
         std::cin >> choice;
+        std::cin.ignore();
 
         switch (choice) {
         case 1: {
@@ -35,7 +36,6 @@ int main() {
         case 3: {
             std::string target;
             std::cout << "Введите ФИО искомого студента: ";
-            std::cin.ignore();
             std::getline(std::cin, target);
             list.printStudentBySNP(list.searchStudent(target));
             break;
@@ -44,7 +44,6 @@ int main() {
         case 4: {
             std::string target;
             std::cout << "Введите ФИО студента для редактирования: ";
-            std::cin.ignore();
             std::getline(std::cin, target);
             list.editStudent(target);
             break;
@@ -53,7 +52,6 @@ int main() {
         case 5: {
             std::string target;
             std::cout << "Введите ФИО студента, которого вы хотите удалить: ";
-            std::cin.ignore();
             std::getline(std::cin, target);
             list.removeStudent(target);
             break;

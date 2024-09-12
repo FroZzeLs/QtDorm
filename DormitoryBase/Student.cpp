@@ -57,7 +57,6 @@ void student::setBlockNumber(int studentsBlock) {
 
 void student::inputInfo() {
     std::cout << "Введите ФИО студента: ";
-    std::cin.ignore();
     std::getline(std::cin, SNP);
 
     std::cout << "Введите номер блока: ";
