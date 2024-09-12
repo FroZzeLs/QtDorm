@@ -1,18 +1,21 @@
 #include "Student.h"
-#include <iostream>
-#include <string>
 
-student::student() : SNP(""), age(0), OPT(0), phoneNumber(""), studActive(0), blockNumber(0) {}
+student::student(const std::string& studentsSNP, int studentsAge,
+    int studentsOPT, const std::string& studentsPhoneNumber,
+    int activityType, int studentsBlock)
+    : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
+    phoneNumber(studentsPhoneNumber), studActive(activityType),
+    blockNumber(studentsBlock) {}
 
-std::string student::getSNP() const {
+std::string student::getSNP() const { 
     return SNP;
 }
 
 int student::getAge() const {
-    return age;
+    return age; 
 }
 
-int student::getOPT() const {
+int student::getOPT() const { 
     return OPT;
 }
 
@@ -21,7 +24,7 @@ std::string student::getPhoneNumber() const {
 }
 
 int student::getStudActive() const {
-    return studActive;
+    return studActive; 
 }
 
 int student::getBlockNumber() const {
@@ -33,7 +36,7 @@ void student::setSNP(const std::string& studentsSNP) {
 }
 
 void student::setAge(int studentsAge) {
-    age = studentsAge;
+    age = studentsAge; 
 }
 
 void student::setOPT(int studentsOPT) {
@@ -70,8 +73,9 @@ void student::inputInfo() {
     std::cout << "Введите статус студента (0 - не активист, 1 - член студсовета, 2 - ДД): ";
     std::cin >> studActive;
 
-    if (studActive != 0)
+    if (studActive != 0) {
         OPT = 36;
+    }
     else {
         std::cout << "Введите количество отработанных часов ОПТ: ";
         std::cin >> OPT;

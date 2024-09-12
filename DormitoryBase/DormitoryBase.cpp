@@ -1,5 +1,4 @@
-﻿#include "main.h"
-#include "List.h"
+﻿#include "List.h"
 #include "Student.h"
 
 int main() {

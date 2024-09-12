@@ -1,6 +1,4 @@
 #include "List.h"
-#include <iostream>
-#include <string>
 
 Node::Node(student studentData) : data(studentData), next(nullptr) {}
 

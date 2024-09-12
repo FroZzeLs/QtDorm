@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 #include <string>
 
@@ -13,7 +12,9 @@ private:
     int blockNumber;
 
 public:
-    student();
+    student(const std::string& studentsSNP = "", int studentsAge = 0,
+        int studentsOPT = 0, const std::string& studentsPhoneNumber = "",
+        int activityType = 0, int studentsBlock = 0);
 
     std::string getSNP() const;
     int getAge() const;
