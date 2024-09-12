@@ -6,20 +6,19 @@
 class Node {
 public:
     student data;
-    Node* next;
+    Node* next = nullptr;
 
-    Node(student studentData);
+    Node(const student studentData);
 };
 
 class StudentList {
 private:
-    Node* head;
+    Node* head = nullptr;
 
 public:
-    StudentList();
     ~StudentList();
 
-    void insert(student studentData);
+    void insert(const student studentData);
     void printList() const;
     student* searchStudent(const std::string& targetSNP) const;
     void printStudentBySNP(student* target) const;

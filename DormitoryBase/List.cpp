@@ -1,14 +1,12 @@
 #include "List.h"
 
-Node::Node(student studentData) : data(studentData), next(nullptr) {}
-
-StudentList::StudentList() : head(nullptr) {}
+Node::Node(const student studentData) : data(studentData) {}
 
 StudentList::~StudentList() {
     removeAllStudents();
 }
 
-void StudentList::insert(student studentData) {
+void StudentList::insert(const student studentData) {
     Node* newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
         newNode->next = head;
