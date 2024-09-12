@@ -16,8 +16,6 @@ private:
     Node* head = nullptr;
 
 public:
-    ~StudentList();
-
     void insert(const student& studentData);
     void printList() const;
     student* searchStudent(const std::string& targetSNP) const;

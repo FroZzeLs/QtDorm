@@ -2,10 +2,6 @@
 
 Node::Node(const student& studentData) : data(studentData) {}
 
-StudentList::~StudentList() {
-    removeAllStudents();
-}
-
 void StudentList::insert(const student& studentData) {
     Node* newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
