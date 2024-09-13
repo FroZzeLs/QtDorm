@@ -23,10 +23,10 @@ public:
     int getStudActive() const;
     int getBlockNumber() const;
 
-    void setSNP(const std::string& studentsSNP);
+    void setSNP(std::string_view studentsSNP);
     void setAge(int studentsAge);
     void setOPT(int studentsOPT);
-    void setPhoneNumber(const std::string& studentsPhoneNumber);
+    void setPhoneNumber(std::string_view studentsPhoneNumber);
     void setStudActive(int activityType);
     void setBlockNumber(int studentsBlock);
 

@@ -31,7 +31,7 @@ int student::getBlockNumber() const {
     return blockNumber;
 }
 
-void student::setSNP(const std::string& studentsSNP) {
+void student::setSNP(std::string_view studentsSNP) {
     SNP = studentsSNP;
 }
 
@@ -43,7 +43,7 @@ void student::setOPT(int studentsOPT) {
     OPT = studentsOPT;
 }
 
-void student::setPhoneNumber(const std::string& studentsPhoneNumber) {
+void student::setPhoneNumber(std::string_view studentsPhoneNumber) {
     phoneNumber = studentsPhoneNumber;
 }
 

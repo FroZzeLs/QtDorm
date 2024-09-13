@@ -34,7 +34,7 @@ void StudentList::printList() const {
     }
 }
 
-student* StudentList::searchStudent(const std::string& targetSNP) const {
+student* StudentList::searchStudent( std::string_view targetSNP) const {
     Node* current = head;
     while (current) {
         if (current->data.getSNP() == targetSNP)

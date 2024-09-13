@@ -18,7 +18,7 @@ private:
 public:
     void insert(const student& studentData);
     void printList() const;
-    student* searchStudent(const std::string& targetSNP) const;
+    student* searchStudent(std::string_view targetSNP) const;
     void printStudentBySNP(const student* target) const;
     void editStudent(const std::string& targetSNP);
     void removeStudent(const std::string& targetSNP);
