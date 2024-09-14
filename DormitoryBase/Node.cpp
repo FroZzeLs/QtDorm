@@ -6,5 +6,5 @@ public:
     student data;
     Node* next = nullptr;
 
-    Node(const student& studentData) : data(studentData) {}
+    explicit Node(const student& studentData) : data(studentData) {}
 };

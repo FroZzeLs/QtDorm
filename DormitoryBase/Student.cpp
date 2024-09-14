@@ -5,7 +5,7 @@ student::student(const std::string& studentsSNP, int studentsAge,
     int activityType, int studentsBlock)
     : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
     phoneNumber(studentsPhoneNumber), studActive(activityType),
-    blockNumber(studentsBlock), Debtor(false) {}
+    blockNumber(studentsBlock) {}
 
 std::string student::getSNP() const { 
     return SNP;
