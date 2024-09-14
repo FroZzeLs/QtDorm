@@ -1,15 +1,17 @@
 ﻿#include "List.h"
 #include "Student.h"
+#include "Header.h"
 
 int main() {
     system("chcp 1251");
     system("cls");
+
     int choice = 1;
     StudentList list;
     student buffer;
 
     while (choice != 0) {
-        std::cout << "Выберите действие:\n1 - Добавить студента\n2 - Вывести информацию по всем студентам\n3 - Найти информацию по одному студенту\n4 - Изменить данные студента\n5 - Удалить студента по ФИО\n6 - Удалить всех студентов\n0 - завершить программу" << std::endl;
+        std::cout << "Выберите действие:\n1 - Добавить студента\n2 - Вывести информацию по всем студентам\n3 - Найти информацию по одному студенту\n4 - Изменить данные студента\n5 - Удалить студента по ФИО\n6 - Удалить всех студентов\n7 - Вывести должников\n0 - завершить программу" << std::endl;
         std::cin >> choice;
         std::cin.ignore();
 
@@ -22,6 +24,7 @@ int main() {
                 list.insert(buffer);
                 std::cout << "Вы желаете продолжить добавление студентов?\nНажмите 1, если да, 0 - если нет:";
                 std::cin >> newStudent;
+                std::cin.ignore();
             } while (newStudent != 0);
             std::cout << "\nДанные успешно добавлены!" << std::endl;
             break;
@@ -59,6 +62,10 @@ int main() {
 
         case 6:
             list.removeAllStudents();
+            break;
+
+        case 7:
+            list.DebtorList().printList();
             break;
 
         case 0:

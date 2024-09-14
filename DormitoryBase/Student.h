@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Header.h"
 
 class student {
 private:
@@ -10,6 +11,7 @@ private:
     std::string phoneNumber;
     int studActive; // 0 - не является активистом, 1 - Студсовет, 2 - ДД
     int blockNumber;
+    bool Debtor;
 
 public:
     student(const std::string& studentsSNP = "", int studentsAge = 0,
@@ -19,6 +21,7 @@ public:
     std::string getSNP() const;
     int getAge() const;
     int getOPT() const;
+    bool getDebtor() const;
     std::string getPhoneNumber() const;
     int getStudActive() const;
     int getBlockNumber() const;

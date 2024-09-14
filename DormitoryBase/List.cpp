@@ -1,5 +1,9 @@
 #include "List.h"
 
+Node* StudentList::getHead() {
+    return head;
+}
+
 void StudentList::insert(const student& studentData) {
     auto newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
@@ -97,4 +101,18 @@ void StudentList::removeAllStudents() {
         delete temp;
     }
     std::cout << "Все студенты удалены." << std::endl;
+}
+
+StudentList StudentList::DebtorList() const {
+    StudentList debtorList;
+    Node* current = head;
+
+    while (current != nullptr) {
+        if (current->data.getDebtor()) {
+            debtorList.insert(current->data);
+        }
+        current = current->next;
+    }
+
+    return debtorList;
 }

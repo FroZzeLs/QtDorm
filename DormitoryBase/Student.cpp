@@ -5,7 +5,7 @@ student::student(const std::string& studentsSNP, int studentsAge,
     int activityType, int studentsBlock)
     : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
     phoneNumber(studentsPhoneNumber), studActive(activityType),
-    blockNumber(studentsBlock) {}
+    blockNumber(studentsBlock), Debtor(false) {}
 
 std::string student::getSNP() const { 
     return SNP;
@@ -29,6 +29,10 @@ int student::getStudActive() const {
 
 int student::getBlockNumber() const {
     return blockNumber;
+}
+
+bool student::getDebtor() const {
+    return Debtor;
 }
 
 void student::setSNP(std::string_view studentsSNP) {
@@ -61,16 +65,18 @@ void student::inputInfo() {
 
     std::cout << "Введите номер блока: ";
     std::cin >> blockNumber;
+    std::cin.ignore();
 
     std::cout << "Введите возраст: ";
     std::cin >> age;
+    std::cin.ignore();
 
     std::cout << "Введите номер телефона: ";
-    std::cin.ignore();
     std::getline(std::cin, phoneNumber);
 
     std::cout << "Введите статус студента (0 - не активист, 1 - член студсовета, 2 - ДД): ";
     std::cin >> studActive;
+    std::cin.ignore();
 
     if (studActive != 0) {
         OPT = 36;
@@ -78,6 +84,14 @@ void student::inputInfo() {
     else {
         std::cout << "Введите количество отработанных часов ОПТ: ";
         std::cin >> OPT;
+        std::cin.ignore();
+    }
+
+    if (OPT < normOfOPT()) {
+        Debtor = true;
+    }
+    else {
+        Debtor = false;
     }
 }
 
@@ -87,4 +101,7 @@ void student::printInfo() const {
     std::cout << "Возраст: " << age << std::endl;
     std::cout << "Отработанные часы ОПТ: " << OPT << std::endl;
     std::cout << "Номер телефона: " << phoneNumber << std::endl;
+    if (Debtor) {
+        std::cout << "Долг ОПТ: " << normOfOPT() - OPT << std::endl;
+    }
 }
