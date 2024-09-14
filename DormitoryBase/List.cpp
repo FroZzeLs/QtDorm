@@ -1,9 +1,7 @@
 #include "List.h"
 
-Node::Node(const student& studentData) : data(studentData) {}
-
 void StudentList::insert(const student& studentData) {
-    Node* newNode = new Node(studentData);
+    auto newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
         newNode->next = head;
         head = newNode;
@@ -53,7 +51,7 @@ void StudentList::printStudentBySNP(const student* target) const {
     target->printInfo();
 }
 
-void StudentList::editStudent(const std::string& targetSNP) {
+void StudentList::editStudent(const std::string& targetSNP) const {
     student* foundedStudent = searchStudent(targetSNP);
     if (foundedStudent) {
         std::cout << "Редактирование информации о студенте: " << targetSNP << std::endl;
