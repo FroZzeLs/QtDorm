@@ -1,6 +1,6 @@
 #pragma once
 #include "Student.h"
-#include "Node.cpp"
+#include "Node.h"
 #include "Header.h"
 
 class StudentList {

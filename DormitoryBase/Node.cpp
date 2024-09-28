@@ -1,10 +1,3 @@
-#include "Student.h"
-#include <iostream>
+#include "Node.h"
 
-class Node {
-public:
-    student data;
-    Node* next = nullptr;
-
-    explicit Node(const student& studentData) : data(studentData) {}
-};
+Node::Node(const student& studentData) : data(studentData) {}

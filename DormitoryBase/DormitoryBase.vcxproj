@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="List.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
