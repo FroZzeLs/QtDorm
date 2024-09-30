@@ -16,6 +16,6 @@ public:
     void editStudent(const std::string& targetSNP) const;
     void removeStudent(const std::string& targetSNP);
     void removeAllStudents();
-    StudentList DebtorList() const;
+    StudentList debtorList() const;
 };
 

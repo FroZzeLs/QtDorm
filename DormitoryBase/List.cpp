@@ -103,7 +103,7 @@ void StudentList::removeAllStudents() {
     std::cout << "Все студенты удалены." << std::endl;
 }
 
-StudentList StudentList::DebtorList() const {
+StudentList StudentList::debtorList() const {
     StudentList debtorList;
     Node* current = head;
 

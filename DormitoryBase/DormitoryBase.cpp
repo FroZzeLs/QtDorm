@@ -65,7 +65,7 @@ int main() {
             break;
 
         case 7:
-            list.DebtorList().printList();
+            list.debtorList().printList();
             break;
 
         case 0:
