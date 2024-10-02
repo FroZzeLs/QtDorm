@@ -4,8 +4,8 @@
 
 class Node {
 public:
-    student data;
+    Student data;
     Node* next = nullptr;
 
-    explicit Node(const student& studentData);
+    explicit Node(const Student& studentData);
 };

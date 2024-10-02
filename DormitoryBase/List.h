@@ -9,10 +9,10 @@ private:
 
 public:
     Node* getHead();
-    void insert(const student& studentData);
+    void insert(const Student& studentData);
     void printList() const;
-    student* searchStudent(std::string_view targetSNP) const;
-    void printStudentBySNP(const student* target) const;
+    Student* searchStudent(std::string_view targetSNP) const;
+    void printStudentBySNP(const Student* target) const;
     void editStudent(const std::string& targetSNP) const;
     void removeStudent(const std::string& targetSNP);
     void removeAllStudents();

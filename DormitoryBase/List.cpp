@@ -4,7 +4,7 @@ Node* StudentList::getHead() {
     return head;
 }
 
-void StudentList::insert(const student& studentData) {
+void StudentList::insert(const Student& studentData) {
     auto newNode = new Node(studentData);
     if (!head || head->data.getBlockNumber() > studentData.getBlockNumber()) {
         newNode->next = head;
@@ -36,7 +36,7 @@ void StudentList::printList() const {
     }
 }
 
-student* StudentList::searchStudent( std::string_view targetSNP) const {
+Student* StudentList::searchStudent( std::string_view targetSNP) const {
     Node* current = head;
     while (current) {
         if (current->data.getSNP() == targetSNP)
@@ -46,7 +46,7 @@ student* StudentList::searchStudent( std::string_view targetSNP) const {
     return nullptr;
 }
 
-void StudentList::printStudentBySNP(const student* target) const {
+void StudentList::printStudentBySNP(const Student* target) const {
     if (!target) {
         std::cout << "Студент с данным ФИО не найден." << std::endl;
         return;
@@ -56,7 +56,7 @@ void StudentList::printStudentBySNP(const student* target) const {
 }
 
 void StudentList::editStudent(const std::string& targetSNP) const {
-    student* foundedStudent = searchStudent(targetSNP);
+    Student* foundedStudent = searchStudent(targetSNP);
     if (foundedStudent) {
         std::cout << "Редактирование информации о студенте: " << targetSNP << std::endl;
         foundedStudent->inputInfo();

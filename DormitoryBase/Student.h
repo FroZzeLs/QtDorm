@@ -3,7 +3,7 @@
 #include <string>
 #include "Header.h"
 
-class student {
+class Student {
 private:
     std::string SNP;
     int age;
@@ -14,7 +14,7 @@ private:
     bool Debtor = false;
 
 public:
-    student(const std::string& studentsSNP = "", int studentsAge = 0,
+    Student(const std::string& studentsSNP = "", int studentsAge = 0,
         int studentsOPT = 0, const std::string& studentsPhoneNumber = "",
         int activityType = 0, int studentsBlock = 0);
 

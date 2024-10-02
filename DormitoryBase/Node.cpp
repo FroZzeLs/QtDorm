@@ -1,3 +1,3 @@
 #include "Node.h"
 
-Node::Node(const student& studentData) : data(studentData) {}
+Node::Node(const Student& studentData) : data(studentData) {}

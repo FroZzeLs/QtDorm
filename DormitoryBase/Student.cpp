@@ -1,65 +1,65 @@
 #include "Student.h"
 
-student::student(const std::string& studentsSNP, int studentsAge,
+Student::Student(const std::string& studentsSNP, int studentsAge,
     int studentsOPT, const std::string& studentsPhoneNumber,
     int activityType, int studentsBlock)
     : SNP(studentsSNP), age(studentsAge), OPT(studentsOPT),
     phoneNumber(studentsPhoneNumber), studActive(activityType),
     blockNumber(studentsBlock) {}
 
-std::string student::getSNP() const { 
+std::string Student::getSNP() const { 
     return SNP;
 }
 
-int student::getAge() const {
+int Student::getAge() const {
     return age; 
 }
 
-int student::getOPT() const { 
+int Student::getOPT() const { 
     return OPT;
 }
 
-std::string student::getPhoneNumber() const {
+std::string Student::getPhoneNumber() const {
     return phoneNumber;
 }
 
-int student::getStudActive() const {
+int Student::getStudActive() const {
     return studActive; 
 }
 
-int student::getBlockNumber() const {
+int Student::getBlockNumber() const {
     return blockNumber;
 }
 
-bool student::getDebtor() const {
+bool Student::getDebtor() const {
     return Debtor;
 }
 
-void student::setSNP(std::string_view studentsSNP) {
+void Student::setSNP(std::string_view studentsSNP) {
     SNP = studentsSNP;
 }
 
-void student::setAge(int studentsAge) {
+void Student::setAge(int studentsAge) {
     age = studentsAge; 
 }
 
-void student::setOPT(int studentsOPT) {
+void Student::setOPT(int studentsOPT) {
     OPT = studentsOPT;
 }
 
-void student::setPhoneNumber(std::string_view studentsPhoneNumber) {
+void Student::setPhoneNumber(std::string_view studentsPhoneNumber) {
     phoneNumber = studentsPhoneNumber;
 }
 
-void student::setStudActive(int activityType) {
+void Student::setStudActive(int activityType) {
     studActive = activityType;
 }
 
-void student::setBlockNumber(int studentsBlock) {
+void Student::setBlockNumber(int studentsBlock) {
     blockNumber = studentsBlock;
 }
 
-void student::inputInfo() {
+void Student::inputInfo() {
     std::cout << "Введите ФИО студента: ";
     std::getline(std::cin, SNP);
 
@@ -95,7 +95,7 @@ void student::inputInfo() {
     }
 }
 
-void student::printInfo() const {
+void Student::printInfo() const {
     std::cout << "ФИО: " << SNP << std::endl;
     std::cout << "Номер блока: " << blockNumber << std::endl;
     std::cout << "Возраст: " << age << std::endl;
