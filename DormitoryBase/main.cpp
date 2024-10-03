@@ -1,6 +1,6 @@
 ﻿#include "List.h"
 #include "Student.h"
-#include "Header.h"
+#include "Logic.h"
 
 int main() {
     system("chcp 1251");

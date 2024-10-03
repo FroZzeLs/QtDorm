@@ -1,7 +1,7 @@
 #pragma once
 #include "Student.h"
 #include "Node.h"
-#include "Header.h"
+#include "Logic.h"
 
 class StudentList {
 private:
