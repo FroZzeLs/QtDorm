@@ -11,7 +11,7 @@ private:
     std::string phoneNumber;
     int studActive; // 0 - не является активистом, 1 - Студсовет, 2 - ДД
     int blockNumber;
-    bool Debtor = false;
+    bool debtor = false;
 
 public:
     Student(const std::string& studentsSNP = "", int studentsAge = 0,

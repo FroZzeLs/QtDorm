@@ -32,7 +32,7 @@ int Student::getBlockNumber() const {
 }
 
 bool Student::getDebtor() const {
-    return Debtor;
+    return debtor;
 }
 
 void Student::setSNP(std::string_view studentsSNP) {
@@ -88,10 +88,10 @@ void Student::inputInfo() {
     }
 
     if (OPT < normOfOPT()) {
-        Debtor = true;
+        debtor = true;
     }
     else {
-        Debtor = false;
+        debtor = false;
     }
 }
 
@@ -101,7 +101,7 @@ void Student::printInfo() const {
     std::cout << "Возраст: " << age << std::endl;
     std::cout << "Отработанные часы ОПТ: " << OPT << std::endl;
     std::cout << "Номер телефона: " << phoneNumber << std::endl;
-    if (Debtor) {
+    if (debtor) {
         std::cout << "Долг ОПТ: " << normOfOPT() - OPT << std::endl;
     }
 }
