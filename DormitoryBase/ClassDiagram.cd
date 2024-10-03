@@ -4,20 +4,20 @@
     <Position X="0.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAMAAAA=</HashCode>
-      <FileName>List.h</FileName>
+      <FileName>Node.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StudentList">
     <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgABAAAAIAAAAQIBAAIAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>gAAAAAAAgABAAAAIAAAAQIBAAIAECAAAAAAAAAAAAAA=</HashCode>
       <FileName>List.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="student">
-    <Position X="6.75" Y="0.5" Width="1.75" />
+  <Class Name="Student">
+    <Position X="6.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>IQAAAEAAIABAQOQAAgABEAAACEAAMgAEAAAAAAgAAAA=</HashCode>
+      <HashCode>IQIAAEAAQABAQiQQAwAFEAAAIEAEEAAkAAAIAAAAABA=</HashCode>
       <FileName>Student.h</FileName>
     </TypeIdentifier>
   </Class>

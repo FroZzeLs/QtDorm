@@ -1,6 +1,7 @@
 ﻿#include "List.h"
 #include "Student.h"
 #include "Logic.h"
+#include <sqlite3.h>
 
 int main() {
     system("chcp 1251");
@@ -37,26 +38,44 @@ int main() {
         }
 
         case 3: {
-            std::string target;
-            std::cout << "Введите ФИО искомого студента: ";
-            std::getline(std::cin, target);
-            list.printStudentBySNP(list.searchStudent(target));
+            std::string targetSurname;
+            std::string targetName;
+            std::string targetPatronym;
+            std::cout << "Введите фамилию искомого студента: ";
+            std::getline(std::cin, targetSurname);
+            std::cout << "Введите имя искомого студента: ";
+            std::getline(std::cin, targetName);
+            std::cout << "Введите отчество искомого студента: ";
+            std::getline(std::cin, targetPatronym);
+            list.printStudentBySNP(list.searchStudent(targetSurname, targetName, targetPatronym));
             break;
         }
 
         case 4: {
-            std::string target;
-            std::cout << "Введите ФИО студента для редактирования: ";
-            std::getline(std::cin, target);
-            list.editStudent(target);
+            std::string targetSurname;
+            std::string targetName;
+            std::string targetPatronym;
+            std::cout << "Введите фамилию студента для редактирования: ";
+            std::getline(std::cin, targetSurname);
+            std::cout << "Введите имя студента: ";
+            std::getline(std::cin, targetName);
+            std::cout << "Введите отчество студента: ";
+            std::getline(std::cin, targetPatronym);
+            list.editStudent(targetSurname, targetName, targetPatronym);
             break;
         }
 
         case 5: {
-            std::string target;
-            std::cout << "Введите ФИО студента, которого вы хотите удалить: ";
-            std::getline(std::cin, target);
-            list.removeStudent(target);
+            std::string targetSurname;
+            std::string targetName;
+            std::string targetPatronym;
+            std::cout << "Введите фамилию студента, которого вы хотите удалить: ";
+            std::getline(std::cin, targetSurname);
+            std::cout << "Введите имя студента: ";
+            std::getline(std::cin, targetName);
+            std::cout << "Введите отчество студента: ";
+            std::getline(std::cin, targetPatronym);
+            list.removeStudent(targetSurname, targetName, targetPatronym);
             break;
         }
 

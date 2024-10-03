@@ -36,10 +36,10 @@ void StudentList::printList() const {
     }
 }
 
-Student* StudentList::searchStudent( std::string_view targetSnp) const {
+Student* StudentList::searchStudent( std::string_view targetSurname, std::string_view targetName, std::string_view targetPatronym) const {
     Node* current = head;
     while (current) {
-        if (current->data.getSnp() == targetSnp)
+        if (current->data.getSurname() == targetSurname && current->data.getName() == targetName && current->data.getPatronym() == targetPatronym)
             return &current->data;
         current = current->next;
     }
@@ -55,43 +55,43 @@ void StudentList::printStudentBySNP(const Student* target) const {
     target->printInfo();
 }
 
-void StudentList::editStudent(const std::string& targetSnp) const {
-    Student* foundedStudent = searchStudent(targetSnp);
+void StudentList::editStudent(const std::string& targetSurname, const std::string& targetName, const std::string& targetPatronym) const {
+    Student* foundedStudent = searchStudent(targetSurname, targetName, targetPatronym);
     if (foundedStudent) {
-        std::cout << "Редактирование информации о студенте: " << targetSnp << std::endl;
+        std::cout << "Редактирование информации о студенте: " << targetSurname << " " << targetName << " " << targetPatronym << std::endl;
         foundedStudent->inputInfo();
     }
     else {
-        std::cout << "Студент с ФИО '" << targetSnp << "' не найден." << std::endl;
+        std::cout << "Студент с ФИО '" << targetSurname << " " << targetName << " " << targetPatronym << "' не найден." << std::endl;
     }
 }
 
-void StudentList::removeStudent(const std::string& targetSnp) {
+void StudentList::removeStudent(const std::string& targetSurname, const std::string& targetName, const std::string& targetPatronym) {
     if (!head) {
         std::cout << "Студентов в базе нет!" << std::endl;
         return;
     }
 
-    if (head->data.getSnp() == targetSnp) {
+    if (head->data.getSurname() == targetSurname && head->data.getName() == targetName && head->data.getPatronym() == targetPatronym) {
         Node* temp = head;
         head = head->next;
         delete temp;
-        std::cout << "Студент с ФИО '" << targetSnp << "' удален." << std::endl;
+        std::cout << "Студент с ФИО '" << targetSurname << " " << targetName << " " << targetPatronym << "' удален." << std::endl;
         return;
     }
 
     Node* current = head;
     while (current->next) {
-        if (current->next->data.getSnp() == targetSnp) {
+        if (current->next->data.getSurname() == targetSurname && current->next->data.getName() == targetName && current->next->data.getPatronym() == targetPatronym) {
             Node* temp = current->next;
             current->next = current->next->next;
             delete temp;
-            std::cout << "Студент с ФИО '" << targetSnp << "' удален." << std::endl;
+            std::cout << "Студент с ФИО '" << targetSurname << " " << targetName << " " << targetPatronym << "' удален." << std::endl;
             return;
         }
         current = current->next;
     }
-    std::cout << "Студент с ФИО '" << targetSnp << "' не найден. Проверьте правильность ввода." << std::endl;
+    std::cout << "Студент с ФИО '" << targetSurname << " " << targetName << " " << targetPatronym << "' не найден. Проверьте правильность ввода." << std::endl;
 }
 
 void StudentList::removeAllStudents() {

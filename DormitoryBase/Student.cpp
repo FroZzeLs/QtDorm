@@ -1,14 +1,25 @@
 #include "Student.h"
 
-Student::Student(const std::string& studentsSnp, int studentsAge,
+Student::Student(const std::string& studentsSurname,
+    const std::string& studentsName, 
+    const std::string& studentsPatronym, int studentsAge,
     int studentsOpt, const std::string& studentsPhoneNumber,
     int activityType, int studentsBlock)
-    : snp(studentsSnp), age(studentsAge), opt(studentsOpt),
+    : surname(studentsSurname), name(studentsName), patronym(studentsPatronym),
+    age(studentsAge), opt(studentsOpt),
     phoneNumber(studentsPhoneNumber), studActive(activityType),
     blockNumber(studentsBlock) {}
 
-std::string Student::getSnp() const { 
-    return snp;
+std::string Student::getSurname() const { 
+    return surname;
+}
+
+std::string Student::getName() const {
+    return name;
+}
+
+std::string Student::getPatronym() const {
+    return patronym;
 }
 
 int Student::getAge() const {
@@ -35,8 +46,16 @@ bool Student::getDebtor() const {
     return debtor;
 }
 
-void Student::setSnp(std::string_view studentsSnp) {
-    snp = studentsSnp;
+void Student::setSurname(std::string_view studentsSurname) {
+    surname = studentsSurname;
+}
+
+void Student::setName(std::string_view studentsName) {
+    name = studentsName;
+}
+
+void Student::setPatronym(std::string_view studentsPatronym) {
+    patronym = studentsPatronym;
 }
 
 void Student::setAge(int studentsAge) {
@@ -60,8 +79,14 @@ void Student::setBlockNumber(int studentsBlock) {
 }
 
 void Student::inputInfo() {
-    std::cout << "Введите ФИО студента: ";
-    std::getline(std::cin, snp);
+    std::cout << "Введите фамилию студента: ";
+    std::getline(std::cin, surname);
+
+    std::cout << "Введите имя студента: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Введите отчество студента: ";
+    std::getline(std::cin, patronym);
 
     std::cout << "Введите номер блока: ";
     std::cin >> blockNumber;
@@ -96,7 +121,7 @@ void Student::inputInfo() {
 }
 
 void Student::printInfo() const {
-    std::cout << "ФИО: " << snp << std::endl;
+    std::cout << "ФИО: " << surname << " " << name << " " << patronym << std::endl;
     std::cout << "Номер блока: " << blockNumber << std::endl;
     std::cout << "Возраст: " << age << std::endl;
     std::cout << "Отработанные часы ОПТ: " << opt << std::endl;
