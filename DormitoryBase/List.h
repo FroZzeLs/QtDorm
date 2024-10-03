@@ -11,10 +11,10 @@ public:
     Node* getHead();
     void insert(const Student& studentData);
     void printList() const;
-    Student* searchStudent(std::string_view targetSNP) const;
+    Student* searchStudent(std::string_view targetSnp) const;
     void printStudentBySNP(const Student* target) const;
-    void editStudent(const std::string& targetSNP) const;
-    void removeStudent(const std::string& targetSNP);
+    void editStudent(const std::string& targetSnp) const;
+    void removeStudent(const std::string& targetSnp);
     void removeAllStudents();
     StudentList debtorList() const;
 };

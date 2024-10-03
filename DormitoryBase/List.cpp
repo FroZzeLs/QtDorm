@@ -36,10 +36,10 @@ void StudentList::printList() const {
     }
 }
 
-Student* StudentList::searchStudent( std::string_view targetSNP) const {
+Student* StudentList::searchStudent( std::string_view targetSnp) const {
     Node* current = head;
     while (current) {
-        if (current->data.getSNP() == targetSNP)
+        if (current->data.getSnp() == targetSnp)
             return &current->data;
         current = current->next;
     }
@@ -55,43 +55,43 @@ void StudentList::printStudentBySNP(const Student* target) const {
     target->printInfo();
 }
 
-void StudentList::editStudent(const std::string& targetSNP) const {
-    Student* foundedStudent = searchStudent(targetSNP);
+void StudentList::editStudent(const std::string& targetSnp) const {
+    Student* foundedStudent = searchStudent(targetSnp);
     if (foundedStudent) {
-        std::cout << "Редактирование информации о студенте: " << targetSNP << std::endl;
+        std::cout << "Редактирование информации о студенте: " << targetSnp << std::endl;
         foundedStudent->inputInfo();
     }
     else {
-        std::cout << "Студент с ФИО '" << targetSNP << "' не найден." << std::endl;
+        std::cout << "Студент с ФИО '" << targetSnp << "' не найден." << std::endl;
     }
 }
 
-void StudentList::removeStudent(const std::string& targetSNP) {
+void StudentList::removeStudent(const std::string& targetSnp) {
     if (!head) {
         std::cout << "Студентов в базе нет!" << std::endl;
         return;
     }
 
-    if (head->data.getSNP() == targetSNP) {
+    if (head->data.getSnp() == targetSnp) {
         Node* temp = head;
         head = head->next;
         delete temp;
-        std::cout << "Студент с ФИО '" << targetSNP << "' удален." << std::endl;
+        std::cout << "Студент с ФИО '" << targetSnp << "' удален." << std::endl;
         return;
     }
 
     Node* current = head;
     while (current->next) {
-        if (current->next->data.getSNP() == targetSNP) {
+        if (current->next->data.getSnp() == targetSnp) {
             Node* temp = current->next;
             current->next = current->next->next;
             delete temp;
-            std::cout << "Студент с ФИО '" << targetSNP << "' удален." << std::endl;
+            std::cout << "Студент с ФИО '" << targetSnp << "' удален." << std::endl;
             return;
         }
         current = current->next;
     }
-    std::cout << "Студент с ФИО '" << targetSNP << "' не найден. Проверьте правильность ввода." << std::endl;
+    std::cout << "Студент с ФИО '" << targetSnp << "' не найден. Проверьте правильность ввода." << std::endl;
 }
 
 void StudentList::removeAllStudents() {
