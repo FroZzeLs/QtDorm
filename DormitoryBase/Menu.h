@@ -3,7 +3,7 @@
 
 void addNewStudents(StudentList& list, Database& dtb);
 
-void searchBySnp(StudentList& list);
+void searchBySnp(const StudentList& list);
 
 void updateStudent(StudentList& list, const Database& dtb);
 

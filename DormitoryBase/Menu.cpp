@@ -16,7 +16,7 @@ void addNewStudents(StudentList& list, Database& dtb)
     std::cout << "\nДанные успешно добавлены!" << std::endl;
 }
 
-void searchBySnp(StudentList& list)
+void searchBySnp(const StudentList& list)
 {
     std::string targetSurname;
     std::string targetName;

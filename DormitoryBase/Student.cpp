@@ -6,9 +6,8 @@ Student::Student(const std::string& studentsSurname,
     int studentsAge, int studentsBlock, int activityType,
     int studentsOpt, bool isDebtor)
     : surname(studentsSurname), name(studentsName), patronym(studentsPatronym),
-    age(studentsAge), opt(studentsOpt),
-    phoneNumber(studentsPhoneNumber), studActive(activityType),
-    blockNumber(studentsBlock), debtor(isDebtor) {}
+    phoneNumber(studentsPhoneNumber), age(studentsAge), blockNumber(studentsBlock),
+    studActive(activityType), opt(studentsOpt), debtor(isDebtor) {}
 
 std::string Student::getSurname() const { 
     return surname;

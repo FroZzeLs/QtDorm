@@ -11,7 +11,7 @@ private:
 	sqlite3* db = nullptr;
 
 public:
-	Database(const std::string& dbName);
+	explicit Database(const std::string& dbName);
 	~Database();
 	void createTable();
 	void addStudent(const Student& student);
