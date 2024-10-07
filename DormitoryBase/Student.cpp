@@ -145,6 +145,6 @@ bool Student::operator==(const Student& other) const {
         opt == other.opt;
 }
 
-bool Student::operator>(const Student& other) const {
-    return blockNumber > other.blockNumber;
+auto Student::operator<=>(const Student& other) const {
+    return blockNumber <=> other.blockNumber;
 }

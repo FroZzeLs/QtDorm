@@ -46,14 +46,12 @@ int main() {
             break;
 
         case 7: {
-            std::vector<Student> debtors = debtorList(list); // Предполагается, что функция возвращает вектор должников
-
-            if (debtors.empty()) { // Проверка, пуст ли вектор
+            if (std::vector<Student> debtors = debtorList(list); debtors.empty()) {
                 std::cout << "Должников нет!" << std::endl;
-                // break; // Если этот код находится в цикле, и вам не нужно выходить, просто уберите 'break'
+                break;
             }
             else {
-                printList(debtors); // Печать списка должников
+                printList(debtors);
             }
             break;
         }

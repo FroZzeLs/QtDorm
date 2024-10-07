@@ -6,10 +6,13 @@
 class Database {
 private:
 	sqlite3* db = nullptr;
+	std::string databaseName;
 
 public:
 	explicit Database(const std::string& dbName);
+	Database(const Database& other);
 	~Database();
+	std::string getDatabaseName() const;
 	void createTable();
 	void addList(const std::vector<Student>& list);
 	std::vector<Student> getAllStudents();
@@ -17,4 +20,5 @@ public:
 	void removeStudent(const std::string& targetSurname, const std::string& targetName, const std::string& targetPatronym);
 	void deleteAllStudents();
 	void addStudent(const Student& student);
+	Database& operator=(Database&& other) noexcept;
 };

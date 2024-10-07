@@ -27,7 +27,6 @@ void searchBySnp(std::vector<Student>& list)
     std::getline(std::cin, targetName);
     std::cout << "Введите отчество искомого студента: ";
     std::getline(std::cin, targetPatronym);
-    //list.printStudentBySnp(list.searchStudent(targetSurname, targetName, targetPatronym));
     printStudentBySnp(searchStudent(list, targetSurname, targetName, targetPatronym));
 }
 

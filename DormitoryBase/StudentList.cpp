@@ -1,9 +1,8 @@
 #include "StudentList.h"
 
 bool checkForOriginality(const std::vector<Student>& students, const Student& student) {
-    return std::any_of(students.begin(), students.end(), [&](const Student& currentStudent) {
-        return student == currentStudent;;
-        });
+    return std::ranges::any_of(students.begin(), students.end(), [&](const Student& currentStudent) {
+        return student == currentStudent;});
 }
 
 void printList(const std::vector<Student>& students) {
@@ -22,12 +21,12 @@ Student* searchStudent(std::vector<Student>& students,
     std::string_view targetSurname,
     std::string_view targetName,
     std::string_view targetPatronym) {
-    auto it = std::find_if(students.begin(), students.end(), [&](const Student& student) {
+    auto it = std::ranges::find_if(students.begin(), students.end(), [&](const Student& student) {
         return student.getSurname() == targetSurname &&
             student.getName() == targetName &&
             student.getPatronym() == targetPatronym;
         });
-    return it != students.end() ? &(*it) : nullptr;
+    return it != students.end() ? std::to_address(it) : nullptr;
 }
 
 void printStudentBySnp(const Student* target) {
@@ -58,14 +57,13 @@ void editStudent(std::vector<Student>& students, const std::string& targetSurnam
 
 void removeStudent(std::vector<Student>& students, const std::string& targetSurname,
     const std::string& targetName, const std::string& targetPatronym, Database& dtb) {
-    auto it = std::remove_if(students.begin(), students.end(), [&](const Student& student) {
+    auto it = std::ranges::remove_if(students.begin(), students.end(), [&](const Student& student) {
         return student.getSurname() == targetSurname &&
             student.getName() == targetName &&
-            student.getPatronym() == targetPatronym;
-        });
+            student.getPatronym() == targetPatronym;});
 
-    if (it != students.end()) {
-        students.erase(it, students.end());
+    if (it.begin() != it.end()) {
+        students.erase(it.begin(), it.end());
         dtb.removeStudent(targetSurname, targetName, targetPatronym);
         std::cout << "Студент с ФИО '" << targetSurname << " " << targetName << " "
             << targetPatronym << "' удален." << std::endl;
@@ -92,13 +90,12 @@ std::vector<Student> debtorList(const std::vector<Student>& students) {
 }
 
 std::vector<Student>& operator+=(std::vector<Student>& students, const Student& studentData) {
-    if (!students.empty() && std::find(students.begin(), students.end(), studentData) != students.end()) {
-        std::cout << "Данный студент уже имеется в БД!" << std::endl;
+    if (!students.empty() && std::ranges::find(students.begin(), students.end(), studentData) != students.end()) {
         return students;
     }
 
     students.push_back(studentData);
-    std::sort(students.begin(), students.end(), [](const Student& a, const Student& b) {
+    std::ranges::sort(students.begin(), students.end(), [](const Student& a, const Student& b) {
         return a.getBlockNumber() < b.getBlockNumber();
         });
     return students;

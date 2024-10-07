@@ -46,5 +46,5 @@ public:
     void printInfo() const;
 
     bool operator==(const Student& other) const;
-    bool operator>(const Student& other) const;
+    auto operator<=>(const Student& other) const;
 };
