@@ -58,7 +58,7 @@ void Database::addStudent(const Student& student) {
 }
 
 
-void Database::addList(std::vector<Student>& list) {
+void Database::addList(const std::vector<Student>& list) {
     for (const auto& student : list) {
         addStudent(student); // Предполагается, что есть функция addStudent, которая добавляет студента в базу данных
     }
@@ -81,7 +81,7 @@ std::vector<Student> Database::getAllStudents() {
             int opt = sqlite3_column_int(stmt, 8);
 
             Student student(surname, name, patronym, phoneNumber, age, blockNumber, studActive, opt, normOfOpt() > opt);
-            list.push_back(student);
+            list += student;
         }
     }
     else {

@@ -7,18 +7,18 @@
       <FileName>Node.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="StudentList">
-    <Position X="3.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>gAAAAAAAgABAAAAIAAAAQIBAAIAECAAAAAAAAAAAAAA=</HashCode>
-      <FileName>List.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Student">
     <Position X="6.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>IQIAAEAAQABAQiQQAwAFEAAAIEAEEAAkAAAIAAAAABA=</HashCode>
+      <HashCode>IQEAAEAAQAFAQiQQA0AFEQAAAEAEEABkEAAsAAQAABA=</HashCode>
       <FileName>Student.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Database">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEAQAAAAAAAAQAAAAAAAAAAABAAAEAQDAAQ=</HashCode>
+      <FileName>Database.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

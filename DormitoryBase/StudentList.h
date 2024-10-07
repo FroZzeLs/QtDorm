@@ -27,3 +27,5 @@ void removeAllStudents(std::vector<Student>& students);
 
 std::vector<Student> debtorList(const std::vector<Student>& students);
 
+std::vector<Student>& operator+=(std::vector<Student>& students, const Student& studentData);
+

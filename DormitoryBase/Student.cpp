@@ -133,3 +133,18 @@ void Student::printInfo() const {
         std::cout << "Äîëã ÎÏÒ: " << normOfOpt() - opt << std::endl;
     }
 }
+
+bool Student::operator==(const Student& other) const {
+    return surname == other.surname &&
+        name == other.name &&
+        patronym == other.patronym &&
+        phoneNumber == other.phoneNumber &&
+        age == other.age &&
+        blockNumber == other.blockNumber &&
+        studActive == other.studActive &&
+        opt == other.opt;
+}
+
+bool Student::operator>(const Student& other) const {
+    return blockNumber > other.blockNumber;
+}

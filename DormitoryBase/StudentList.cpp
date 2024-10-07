@@ -2,22 +2,7 @@
 
 bool checkForOriginality(const std::vector<Student>& students, const Student& student) {
     return std::any_of(students.begin(), students.end(), [&](const Student& currentStudent) {
-        return student.getSurname() == currentStudent.getSurname() &&
-            student.getName() == currentStudent.getName() &&
-            student.getPatronym() == currentStudent.getPatronym() &&
-            student.getPhoneNumber() == currentStudent.getPhoneNumber();
-        });
-}
-
-void insert(std::vector<Student>& students, const Student& studentData) {
-    if (checkForOriginality(students, studentData)) {
-        std::cout << "Данный студент уже имеется в БД!" << std::endl;
-        return;
-    }
-
-    students.push_back(studentData);
-    std::sort(students.begin(), students.end(), [](const Student& a, const Student& b) {
-        return a.getBlockNumber() < b.getBlockNumber();
+        return student == currentStudent;;
         });
 }
 
@@ -104,4 +89,17 @@ std::vector<Student> debtorList(const std::vector<Student>& students) {
         }
     }
     return debtors;
+}
+
+std::vector<Student>& operator+=(std::vector<Student>& students, const Student& studentData) {
+    if (!students.empty() && std::find(students.begin(), students.end(), studentData) != students.end()) {
+        std::cout << "Данный студент уже имеется в БД!" << std::endl;
+        return students;
+    }
+
+    students.push_back(studentData);
+    std::sort(students.begin(), students.end(), [](const Student& a, const Student& b) {
+        return a.getBlockNumber() < b.getBlockNumber();
+        });
+    return students;
 }

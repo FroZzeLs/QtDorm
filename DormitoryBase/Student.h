@@ -44,4 +44,7 @@ public:
 
     void inputInfo();
     void printInfo() const;
+
+    bool operator==(const Student& other) const;
+    bool operator>(const Student& other) const;
 };

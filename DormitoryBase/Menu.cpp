@@ -7,7 +7,7 @@ void addNewStudents(std::vector<Student>& list, Database& dtb)
     do {
         Student buffer;
         buffer.inputInfo();
-        list.push_back(buffer);
+        list += buffer;
         std::cout << "Вы желаете продолжить добавление студентов?\nНажмите 1, если да, 0 - если нет:";
         std::cin >> newStudent;
         std::cin.ignore();
