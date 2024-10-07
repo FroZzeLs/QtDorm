@@ -1,13 +1,13 @@
 #include "Menu.h"
 
-void addNewStudents(StudentList& list, Database& dtb)
+void addNewStudents(std::vector<Student>& list, Database& dtb)
 {
     std::cout << "Введите данные студента:" << std::endl;
     int newStudent = 0;
     do {
         Student buffer;
         buffer.inputInfo();
-        list.insert(buffer);
+        list.push_back(buffer);
         std::cout << "Вы желаете продолжить добавление студентов?\nНажмите 1, если да, 0 - если нет:";
         std::cin >> newStudent;
         std::cin.ignore();
@@ -16,7 +16,7 @@ void addNewStudents(StudentList& list, Database& dtb)
     std::cout << "\nДанные успешно добавлены!" << std::endl;
 }
 
-void searchBySnp(const StudentList& list)
+void searchBySnp(std::vector<Student>& list)
 {
     std::string targetSurname;
     std::string targetName;
@@ -27,10 +27,11 @@ void searchBySnp(const StudentList& list)
     std::getline(std::cin, targetName);
     std::cout << "Введите отчество искомого студента: ";
     std::getline(std::cin, targetPatronym);
-    list.printStudentBySnp(list.searchStudent(targetSurname, targetName, targetPatronym));
+    //list.printStudentBySnp(list.searchStudent(targetSurname, targetName, targetPatronym));
+    printStudentBySnp(searchStudent(list, targetSurname, targetName, targetPatronym));
 }
 
-void updateStudent(StudentList& list, const Database& dtb)
+void updateStudent(std::vector<Student>& list, Database& dtb)
 {
     std::string targetSurname;
     std::string targetName;
@@ -41,10 +42,10 @@ void updateStudent(StudentList& list, const Database& dtb)
     std::getline(std::cin, targetName);
     std::cout << "Введите отчество студента: ";
     std::getline(std::cin, targetPatronym);
-    list.editStudent(targetSurname, targetName, targetPatronym, dtb);
+    editStudent(list, targetSurname, targetName, targetPatronym, dtb);
 }
 
-void removeOneStudent(StudentList& list, const Database& dtb)
+void removeOneStudent(std::vector<Student>& list, Database& dtb)
 {
     std::string targetSurname;
     std::string targetName;
@@ -55,5 +56,5 @@ void removeOneStudent(StudentList& list, const Database& dtb)
     std::getline(std::cin, targetName);
     std::cout << "Введите отчество студента: ";
     std::getline(std::cin, targetPatronym);
-    list.removeStudent(targetSurname, targetName, targetPatronym, dtb);
+    removeStudent(list, targetSurname, targetName, targetPatronym, dtb);
 }

@@ -1,18 +1,13 @@
-﻿#include "List.h"
-#include "Student.h"
-#include "Logic.h"
-#include <sqlite3.h>
-#include "Database.h"
+﻿#include "Student.h"
 #include "Menu.h"
 
 int main() {
     system("chcp 1251");
     system("cls");
     int choice = 1;
-    StudentList list;
     Database dtb("Students.db");
     dtb.createTable();
-    list = dtb.getAllStudents();
+    std::vector<Student> list(dtb.getAllStudents());
 
     while (choice != 0) {
         std::cout << "Выберите действие:\n1 - Добавить студента в БД\n2 - Вывести информацию по всем студентам\n3 - Найти информацию по одному студенту\n4 - Изменить данные студента\n5 - Удалить студента по ФИО\n6 - Удалить всех студентов\n7 - Вывести должников\n0 - завершить программу" << std::endl;
@@ -27,7 +22,7 @@ int main() {
 
         case 2: {
             std::cout << "\nВсе студенты:" << std::endl;
-            list.printList();
+            printList(list);
             break;
         }
 
@@ -46,17 +41,20 @@ int main() {
         }
 
         case 6:
-            list.removeAllStudents();
+            removeAllStudents(list);
             dtb.deleteAllStudents();
             break;
 
         case 7: {
-            StudentList debtors = list.debtorList();
-            if (debtors.getHead() == nullptr) {
+            std::vector<Student> debtors = debtorList(list); // Предполагается, что функция возвращает вектор должников
+
+            if (debtors.empty()) { // Проверка, пуст ли вектор
                 std::cout << "Должников нет!" << std::endl;
-                break;
+                // break; // Если этот код находится в цикле, и вам не нужно выходить, просто уберите 'break'
             }
-            debtors.printList();
+            else {
+                printList(debtors); // Печать списка должников
+            }
             break;
         }
 

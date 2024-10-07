@@ -57,17 +57,15 @@ void Database::addStudent(const Student& student) {
     sqlite3_finalize(stmt);
 }
 
-void Database::addList(const StudentList& list) {
-    Node* current = list.head;
-    while (current != nullptr) {
-        addStudent(current->data);
-        current = current->next;
+
+void Database::addList(std::vector<Student>& list) {
+    for (const auto& student : list) {
+        addStudent(student); // Предполагается, что есть функция addStudent, которая добавляет студента в базу данных
     }
-    delete current;
 }
 
-StudentList Database::getAllStudents() {
-    StudentList list;
+std::vector<Student> Database::getAllStudents() {
+    std::vector<Student> list;
     const char* sql = "SELECT * FROM Student;";
     sqlite3_stmt* stmt;
 
@@ -83,7 +81,7 @@ StudentList Database::getAllStudents() {
             int opt = sqlite3_column_int(stmt, 8);
 
             Student student(surname, name, patronym, phoneNumber, age, blockNumber, studActive, opt, normOfOpt() > opt);
-            list.insert(student);
+            list.push_back(student);
         }
     }
     else {
@@ -143,7 +141,7 @@ void Database::removeStudent(const std::string& surname, const std::string& name
     if (sqlite3_step(stmt) != SQLITE_DONE) {
         std::cerr << "Ошибка удаления данных: " << sqlite3_errmsg(db) << std::endl;
     }
-  
+
     sqlite3_finalize(stmt);
 }
 

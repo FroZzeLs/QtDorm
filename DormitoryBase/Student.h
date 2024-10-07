@@ -1,9 +1,6 @@
 #pragma once
-#include <iostream>
 #include <string>
 #include "Logic.h"
-#include <sqlite3.h>
-#include <format>
 
 class Student {
     friend class Database;

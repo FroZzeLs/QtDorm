@@ -1,10 +1,10 @@
 #pragma once
-#include "List.h"
+#include "StudentList.h"
 
-void addNewStudents(StudentList& list, Database& dtb);
+void addNewStudents(std::vector<Student>& list, Database& dtb);
 
-void searchBySnp(const StudentList& list);
+void searchBySnp(std::vector<Student>& list);
 
-void updateStudent(StudentList& list, const Database& dtb);
+void updateStudent(std::vector<Student>& list, Database& dtb);
 
-void removeOneStudent(StudentList& list, const Database& dtb);
+void removeOneStudent(std::vector<Student>& list, Database& dtb);
