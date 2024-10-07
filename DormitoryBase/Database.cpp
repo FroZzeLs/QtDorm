@@ -70,7 +70,7 @@ void Database::addStudent(const Student& student) {
 
 void Database::addList(const std::vector<Student>& list) {
     for (const auto& student : list) {
-        addStudent(student); // Предполагается, что есть функция addStudent, которая добавляет студента в базу данных
+        addStudent(student); 
     }
 }
 
@@ -170,17 +170,14 @@ void Database::deleteAllStudents() {
 
 Database& Database::operator=(const Database& other) {
     if (this != &other) {
-        // Закрываем предыдущую базу данных, если она была открыта
         if (db) {
             sqlite3_close(db);
         }
 
-        // Копируем данные
         databaseName = other.databaseName;
         if (sqlite3_open(databaseName.c_str(), &db) != SQLITE_OK) {
             throw DatabaseException("Не удалось открыть базу данных в операторе копирования");
         }
-        // Вы также можете добавить дополнительные операции копирования, если это необходимо
     }
     return *this;
 }
