@@ -2,6 +2,7 @@
 #include <sqlite3.h>
 #include "StudentList.h"
 #include "Student.h"
+#include "DatabaseException.h"
 
 class Database {
 private:
@@ -20,5 +21,5 @@ public:
 	void removeStudent(const std::string& targetSurname, const std::string& targetName, const std::string& targetPatronym);
 	void deleteAllStudents();
 	void addStudent(const Student& student);
-	Database& operator=(Database&& other) noexcept;
+	Database& operator=(const Database& other);
 };

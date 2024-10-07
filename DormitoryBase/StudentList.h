@@ -1,12 +1,11 @@
 #pragma once
 #include <vector>
 #include <algorithm>
+#include <ranges>
 #include "Student.h"
 #include "Database.h"
 
 bool checkForOriginality(const std::vector<Student>& students, const Student& student);
-
-void insert(std::vector<Student>& students, const Student& studentData);
 
 void printList(const std::vector<Student>& students);
 

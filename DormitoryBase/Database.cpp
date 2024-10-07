@@ -1,7 +1,6 @@
 #include "Database.h"
 
-Database::Database(const std::string& dbName) {
-    databaseName = dbName;
+Database::Database(const std::string& dbName) : databaseName(dbName) {
     if (sqlite3_open(dbName.c_str(), &db) != SQLITE_OK) {
         std::cerr << "Ошибка открытия базы данных: " << sqlite3_errmsg(db) << std::endl;
     }
@@ -9,7 +8,7 @@ Database::Database(const std::string& dbName) {
 
 Database::Database(const Database& other) {
     if (sqlite3_open(other.getDatabaseName().c_str(), &db) != SQLITE_OK) {
-        throw std::runtime_error("Не удалось открыть базу данных в конструкторе копирования");
+        throw DatabaseException("Не удалось открыть базу данных в конструкторе копирования");
     }
 }
 
@@ -169,13 +168,19 @@ void Database::deleteAllStudents() {
     }
 }
 
-Database& Database::operator=(Database&& other) noexcept {
+Database& Database::operator=(const Database& other) {
     if (this != &other) {
+        // Закрываем предыдущую базу данных, если она была открыта
         if (db) {
             sqlite3_close(db);
         }
-        db = other.db;
-        other.db = nullptr;
+
+        // Копируем данные
+        databaseName = other.databaseName;
+        if (sqlite3_open(databaseName.c_str(), &db) != SQLITE_OK) {
+            throw DatabaseException("Не удалось открыть базу данных в операторе копирования");
+        }
+        // Вы также можете добавить дополнительные операции копирования, если это необходимо
     }
     return *this;
 }

@@ -1,7 +1,7 @@
 #include "StudentList.h"
 
 bool checkForOriginality(const std::vector<Student>& students, const Student& student) {
-    return std::ranges::any_of(students.begin(), students.end(), [&](const Student& currentStudent) {
+    return std::ranges::any_of(students, [&](const Student& currentStudent) {
         return student == currentStudent;});
 }
 

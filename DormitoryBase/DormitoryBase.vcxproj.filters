@@ -33,6 +33,9 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="DatabaseException.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -51,6 +54,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Database.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseException.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
