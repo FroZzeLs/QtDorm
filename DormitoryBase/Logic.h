@@ -2,4 +2,4 @@
 #include <iostream>
 #include <ctime>
 
-int normOfOPT();
+int normOfOpt();

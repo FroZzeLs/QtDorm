@@ -1,14 +1,14 @@
 #include "Student.h"
 
 Student::Student(const std::string& studentsSurname,
-    const std::string& studentsName, 
-    const std::string& studentsPatronym, int studentsAge,
-    int studentsOpt, const std::string& studentsPhoneNumber,
-    int activityType, int studentsBlock)
+    const std::string& studentsName,
+    const std::string& studentsPatronym, const std::string& studentsPhoneNumber,
+    int studentsAge, int studentsBlock, int activityType,
+    int studentsOpt, bool isDebtor)
     : surname(studentsSurname), name(studentsName), patronym(studentsPatronym),
     age(studentsAge), opt(studentsOpt),
     phoneNumber(studentsPhoneNumber), studActive(activityType),
-    blockNumber(studentsBlock) {}
+    blockNumber(studentsBlock), debtor(isDebtor) {}
 
 std::string Student::getSurname() const { 
     return surname;
@@ -78,6 +78,10 @@ void Student::setBlockNumber(int studentsBlock) {
     blockNumber = studentsBlock;
 }
 
+void Student::setDebtor(bool isDebtor) {
+    debtor = isDebtor;
+}
+
 void Student::inputInfo() {
     std::cout << "Введите фамилию студента: ";
     std::getline(std::cin, surname);
@@ -112,7 +116,7 @@ void Student::inputInfo() {
         std::cin.ignore();
     }
 
-    if (opt < normOfOPT()) {
+    if (opt < normOfOpt()) {
         debtor = true;
     }
     else {
@@ -127,6 +131,6 @@ void Student::printInfo() const {
     std::cout << "Отработанные часы ОПТ: " << opt << std::endl;
     std::cout << "Номер телефона: " << phoneNumber << std::endl;
     if (debtor) {
-        std::cout << "Долг ОПТ: " << normOfOPT() - opt << std::endl;
+        std::cout << "Долг ОПТ: " << normOfOpt() - opt << std::endl;
     }
 }

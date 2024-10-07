@@ -2,25 +2,28 @@
 #include <iostream>
 #include <string>
 #include "Logic.h"
+#include <sqlite3.h>
+#include <format>
 
 class Student {
+    friend class Database;
 private:
     std::string surname;
     std::string name;
     std::string patronym;
     std::string phoneNumber;
     int age;
-    int opt;    
-    int studActive; // 0 - не является активистом, 1 - Студсовет, 2 - ДД
     int blockNumber;
+    int studActive; // 0 - не является активистом, 1 - Студсовет, 2 - ДД    
     bool debtor = false;
+    int opt;
 
 public:
     Student(const std::string& studentsSurname = "", 
         const std::string& studentsName = "", 
-        const std::string& studentsPatronym = "", int studentsAge = 0,
-        int studentsOPT = 0, const std::string& studentsPhoneNumber = "",
-        int activityType = 0, int studentsBlock = 0);
+        const std::string& studentsPatronym = "", const std::string& studentsPhoneNumber = "",
+        int studentsAge = 0, int studentsBlock = 0, int activityType = 0,
+        int studentsOpt = 0, bool isDebtor = false);
 
     std::string getSurname() const;
     std::string getName() const;
@@ -40,6 +43,7 @@ public:
     void setPhoneNumber(std::string_view studentsPhoneNumber);
     void setStudActive(int activityType);
     void setBlockNumber(int studentsBlock);
+    void setDebtor(bool isDebtor);
 
     void inputInfo();
     void printInfo() const;

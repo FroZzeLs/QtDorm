@@ -1,6 +1,6 @@
 #include "Logic.h"
 
-int normOfOPT() {
+int normOfOpt() {
     const int septemberNumber = 8;
     const int julyNumber = 6;
     const int differenceForStartOfYear = 4;
