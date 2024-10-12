@@ -5,7 +5,7 @@
 
 ## Технологии проекта
 - **ЯП**: C++.
-- **БД**: postgreSQL/MySQL/SQLite
+- **БД**: SQLite
 
 # Ссылка на Sonar
 https://sonarcloud.io/project/overview?id=FroZzeLs_DormitoryBase
