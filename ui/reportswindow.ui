@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportsWindow</class>
+ <widget class="QDialog" name="ReportsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>241</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>22</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отчёты</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>350</y>
+     <width>93</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: red; /* Цвет при нажатии */
+}</string>
+   </property>
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>221</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для бокса */
+    border-radius: 12px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри бокса */
+}
+</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>201</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="allStudents">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+       </property>
+       <property name="text">
+        <string>Все студенты</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="debtors">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+       </property>
+       <property name="text">
+        <string>Должники ОПТ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="studentCouncil">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+       </property>
+       <property name="text">
+        <string>Состав Студсовета</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="dd">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+       </property>
+       <property name="text">
+        <string>Состав ДД</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddStudent</class>
+ <widget class="QDialog" name="AddStudent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;</string>
+  </property>
+  <widget class="QLabel" name="header">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Добавление студента</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>271</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для окна */
+    border-radius: 12px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри окна */
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="surnameEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="patronymEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Отчество</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>420</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phoneNumberEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Номер телефона</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ageEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Возраст</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="blockEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Номер блока</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="optEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>385</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Отработанные часы ОПТ</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="activityType">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>335</y>
+      <width>211</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semilight</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background-color: #FFFFFF; /* Белый фон для ComboBox */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри ComboBox */
+    font-size: 16px; /* Размер шрифта */
+    color: #000000; /* Цвет текста */
+    padding-right: 30px; /* Отступ справа для стрелки */
+}
+
+QComboBox::down-arrow {
+    /*image: url(&quot;C:\\Users\\Сергей\\source\\repos\\CloneDormitory\\CloneDormitory\\CloneDormitory\\down-arrow.png&quot;);  Замените на ваш путь к изображению стрелки */
+    width: 10px; /* Ширина стрелки */
+    height: 10px; /* Высота стрелки */
+}
+
+QComboBox::item {
+    background-color: #FFFFFF; /* Фон для элементов выпадающего списка */
+    color: #000000; /* Цвет текста элементов */
+}
+
+QComboBox::item:selected {
+    background-color: #007BFF; /* Фон для выбранного элемента */
+    color: #FFFFFF; /* Цвет текста для выбранного элемента */
+}</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
