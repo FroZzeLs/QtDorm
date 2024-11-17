@@ -32,7 +32,7 @@ private:
     Ui::Students *ui;
     Database* dtb;
     QScrollArea* scrollArea;
-    void displayStudents(const QList<StudentResident> students, QScrollArea *scrollArea);
+    void displayStudents(const List<StudentResident> students, QScrollArea *scrollArea);
     QScrollArea* createScrollArea();
 };
 

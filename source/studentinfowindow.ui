@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentInfoWindow</class>
+ <widget class="QDialog" name="StudentInfoWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>551</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для бокса */
+    border-radius: 12px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри бокса */
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="surnameEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="patronymEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phoneEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ageEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="blockEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>90</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="optEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>210</y>
+      <width>215</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 2px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>66</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Имя:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Отчество:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>161</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Номер телефона:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>190</y>
+      <width>111</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Часы ОПТ:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>130</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Вид активности:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Номер блока:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 16px; /* Размер шрифта кнопки */
+ padding: 1px;</string>
+    </property>
+    <property name="text">
+     <string>Возраст:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="activityType">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>150</y>
+      <width>215</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background-color: #FFFFFF; /* Белый фон для ComboBox */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри ComboBox */
+    font-size: 16px; /* Размер шрифта */
+    color: #000000; /* Цвет текста */
+    padding-right: 30px; /* Отступ справа для стрелки */
+}
+
+QComboBox::down-arrow {
+    /*image: url(&quot;C:\\Users\\Сергей\\source\\repos\\CloneDormitory\\CloneDormitory\\CloneDormitory\\down-arrow.png&quot;);  Замените на ваш путь к изображению стрелки */
+    width: 10px; /* Ширина стрелки */
+    height: 10px; /* Высота стрелки */
+}
+
+QComboBox::item {
+    background-color: #FFFFFF; /* Фон для элементов выпадающего списка */
+    color: #000000; /* Цвет текста элементов */
+}
+
+QComboBox::item:selected {
+    background-color: #007BFF; /* Фон для выбранного элемента */
+    color: #FFFFFF; /* Цвет текста для выбранного элемента */
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #e74c3c; /* Основной цвет фона кнопки (красный) */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #c0392b; /* Цвет при наведении (темный красный) */
+}
+
+QPushButton:pressed {
+    background-color: #e74c3c; /* Цвет при нажатии (остается красным) */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Удалить студента</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>280</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color:  red; /* Цвет при нажатии */
+}</string>
+   </property>
+   <property name="text">
+    <string>Сохранить и выйти</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -18,6 +18,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    template <typename WindowType>
+    void defaultShowWindow(Database* dtb, QWidget* current);
+
 private slots:
 
     void on_students_clicked();

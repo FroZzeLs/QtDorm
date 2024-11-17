@@ -2,6 +2,7 @@
 #define REPORTSWINDOW_H
 
 #include <QDialog>
+#include "database.h"
 
 namespace Ui {
 class ReportsWindow;
@@ -12,7 +13,7 @@ class ReportsWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit ReportsWindow(QWidget *parent = nullptr);
+    explicit ReportsWindow(Database* db, QWidget *parent = nullptr);
     ~ReportsWindow();
 
 private slots:
@@ -20,6 +21,7 @@ private slots:
 
 private:
     Ui::ReportsWindow *ui;
+    Database* dtb;
 };
 
 #endif // REPORTSWINDOW_H

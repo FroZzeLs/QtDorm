@@ -35,7 +35,7 @@ void Students::on_delAll_clicked()
     }
 }
 
-void Students::displayStudents(const QList<StudentResident> students, QScrollArea *scrollArea) {
+void Students::displayStudents(const List<StudentResident> students, QScrollArea *scrollArea) {
     QWidget *buttonContainer = scrollArea->widget();
 
     QLayoutItem *item;
@@ -47,7 +47,6 @@ void Students::displayStudents(const QList<StudentResident> students, QScrollAre
     int buttonHeight = 61;
 
     QVBoxLayout *vLayout = qobject_cast<QVBoxLayout*>(buttonContainer->layout());
-
     for (const StudentResident &student : students) {
         QPushButton *button = new QPushButton(buttonContainer);
         button->setFixedHeight(buttonHeight);

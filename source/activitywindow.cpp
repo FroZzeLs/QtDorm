@@ -48,3 +48,7 @@ void ActivityWindow::setupUI() {
         }
     )");
 }
+
+void ActivityWindow::initializeActivity(){
+    displayActivity();
+}

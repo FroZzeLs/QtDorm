@@ -1,12 +1,21 @@
 #include "./../headers/studentinfowindow.h"
 #include "./../headers/councilactivitywindow.h"
 #include "./../headers/voluntarysquadwindow.h"
+#include "./../headers/validateinput.h"
+#include "./../headers/invalidnameexception.h"
+#include "./../headers/invalidnumberexception.h"
+#include "./../headers/invalidphonenumberexception.h"
 #include "ui_studentinfowindow.h"
 
-StudentInfoWindow::StudentInfoWindow(Database* dtb, StudentResident &studentData, QWidget *parent)
+
+StudentInfoWindow::StudentInfoWindow(Database* dtb, const StudentResident &studentData, QWidget *parent)
     : dtb(dtb), student(studentData), QDialog(parent)
     , ui(new Ui::StudentInfoWindow)
 {
+    fullSetupUi(studentData);
+}
+
+void StudentInfoWindow::fullSetupUi(const StudentResident &studentData){
     ui->setupUi(this);
     ui->surnameEdit->setText(studentData.getSurname());
     ui->nameEdit->setText(studentData.getName());
@@ -23,7 +32,7 @@ StudentInfoWindow::StudentInfoWindow(Database* dtb, StudentResident &studentData
         createStyledButton(1, "Показать активность", this);
     }
     else if(activityTypeValue == 2){
-       createStyledButton(2, "Показать обходы", this);
+        createStyledButton(2, "Показать обходы", this);
     }
     ui->optEdit->setText(QString::number(studentData.getOpt()));
 }
@@ -58,14 +67,37 @@ void StudentInfoWindow::on_saveButton_clicked()
     int opt;
     if(studActive != 0){
         opt = 36;
+        try{
+            validateInput(surname, name, patronym, phoneNumber, ui->ageEdit->text(),
+                          ui->blockEdit->text());
+        } catch (const InvalidNameException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        } catch (const InvalidPhoneNumberException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        } catch (const InvalidNumberException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        }
     }
     else{
         opt = ui->optEdit->text().toInt();
+        try{
+            validateInput(surname, name, patronym, phoneNumber, ui->ageEdit->text(),
+                          ui->blockEdit->text(), ui->optEdit->text());
+        } catch (const InvalidNameException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        } catch (const InvalidPhoneNumberException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        } catch (const InvalidNumberException& exception) {
+            QMessageBox::warning(this, "Ошибка ввода", exception.what());
+            return;
+        }
     }
-    if (surname.isEmpty() || name.isEmpty()){
-        QMessageBox::warning(this, "Ошибка", "Не удалось изменить данные. Проверьте правильность ввода.");
-        return;
-    }
+
     StudentResident newInfo(-1, surname, name, patronym, phoneNumber, age, blockNumber, studActive, opt);
     if(!(student == newInfo)){
     if (dtb->updateStudent(student, newInfo)) {
@@ -101,9 +133,12 @@ QPushButton* StudentInfoWindow::createStyledButton(int type, const QString &text
     connect(button, &QPushButton::clicked, [type, parent]() {
         if (type == 1) {
             CouncilActivityWindow *councilWindow = new CouncilActivityWindow();
+            councilWindow->initializeActivity();
             councilWindow->show();
+
         } else if (type == 2) {
             VoluntarySquadWindow *squadWindow = new VoluntarySquadWindow();
+            squadWindow->initializeActivity();
             squadWindow->show();
         }
     });
