@@ -15,32 +15,38 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Sql Widgets)
 set(PROJECT_SOURCES
         main.cpp
 
-
-
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Dormitory
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        /home/sergey/Dormitory/source/addstudentwindow.cpp /home/sergey/Dormitory/headers/addstudentwindow.h /home/sergey/Dormitory/ui/addstudentwindow.ui
-        /home/sergey/Dormitory/source/mainwindow.cpp /home/sergey/Dormitory/headers/mainwindow.h /home/sergey/Dormitory/ui/mainwindow.ui
-        /home/sergey/Dormitory/source/reportswindow.cpp /home/sergey/Dormitory/headers/reportswindow.h /home/sergey/Dormitory/ui/reportswindow.ui
-        /home/sergey/Dormitory/source/studentswindow.cpp /home/sergey/Dormitory/headers/studentswindow.h /home/sergey/Dormitory/ui/studentswindow.ui
+        source/addstudentwindow.cpp headers/addstudentwindow.h ui/addstudentwindow.ui
+        source/mainwindow.cpp headers/mainwindow.h ui/mainwindow.ui
+        source/reportswindow.cpp headers/reportswindow.h ui/reportswindow.ui
+        source/studentswindow.cpp headers/studentswindow.h ui/studentswindow.ui
         main.cpp
         resource.qrc
-        /home/sergey/Dormitory/source/database.cpp /home/sergey/Dormitory/headers/database.h
-        /home/sergey/Dormitory/headers/person.h /home/sergey/Dormitory/source/person.cpp
-        /home/sergey/Dormitory/headers/resident.h /home/sergey/Dormitory/source/resident.cpp
-        /home/sergey/Dormitory/headers/logic.h /home/sergey/Dormitory/source/logic.cpp
-        /home/sergey/Dormitory/headers/studentresident.h /home/sergey/Dormitory/source/studentresident.cpp
-        /home/sergey/Dormitory/headers/blockmanager.h /home/sergey/Dormitory/source/blockmanager.cpp
+        source/database.cpp headers/database.h
+        headers/person.h source/person.cpp
+        headers/resident.h source/resident.cpp
+        headers/logic.h source/logic.cpp
+        headers/studentresident.h source/studentresident.cpp
+        headers/blockmanager.h source/blockmanager.cpp
 
-        /home/sergey/Dormitory/headers/studentinfowindow.h /home/sergey/Dormitory/source/studentinfowindow.cpp /home/sergey/Dormitory/ui/studentinfowindow.ui
-        /home/sergey/Dormitory/headers/activitywindow.h /home/sergey/Dormitory/source/activitywindow.cpp /home/sergey/Dormitory/ui/activitywindow.ui
+        headers/studentinfowindow.h source/studentinfowindow.cpp ui/studentinfowindow.ui
+        headers/activitywindow.h source/activitywindow.cpp
 
-        /home/sergey/Dormitory/headers/voluntarysquadwindow.h /home/sergey/Dormitory/source/voluntarysquadwindow.cpp /home/sergey/Dormitory/ui/voluntarysquadwindow.ui
-        /home/sergey/Dormitory/headers/councilactivitywindow.h /home/sergey/Dormitory/source/councilactivitywindow.cpp /home/sergey/Dormitory/ui/councilactivitywindow.ui
+        headers/voluntarysquadwindow.h source/voluntarysquadwindow.cpp
+        headers/councilactivitywindow.h source/councilactivitywindow.cpp
+        headers/list.h
+        headers/inputexception.h source/inputexception.cpp
+        headers/invalidnameexception.h source/invalidnameexception.cpp
+        headers/invalidphonenumberexception.h source/invalidphonenumberexception.cpp
+        headers/invalidnumberexception.h source/invalidnumberexception.cpp
+        headers/validateinput.h source/validateinput.cpp
+
+
 
     )
 # Define target properties for Android with Qt 6 as:

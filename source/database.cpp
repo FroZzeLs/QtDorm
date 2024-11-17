@@ -107,8 +107,8 @@ bool Database::deleteAllData() {
     return true;
 }
 
-QList<StudentResident> Database::searchStudents(int floor) {
-    QList<StudentResident> students;
+List<StudentResident> Database::searchStudents(int floor) {
+    List<StudentResident> students;
 
     int minBlockNumber = floor * 100;
     int maxBlockNumber = minBlockNumber + 99;
@@ -182,9 +182,9 @@ bool Database::removeStudent(int studentId) {
     return true;
 }
 
-QList<StudentResident> Database::searchStudents(const QString& surname, const QString& name,
+List<StudentResident> Database::searchStudents(const QString& surname, const QString& name,
                                                 const QString& patronym, int blockNumber) {
-    QList<StudentResident> students;
+    List<StudentResident> students;
     QSqlQuery query;
 
     QString sql = "SELECT * FROM Students WHERE 1=1 "; // 1=1 позволяет легко добавлять условия

@@ -15,7 +15,7 @@ class StudentInfoWindow : public QDialog
     Q_OBJECT
 
 public:
-    StudentInfoWindow(Database* dtb, StudentResident& student, QWidget *parent = nullptr);
+    StudentInfoWindow(Database* dtb, const StudentResident& student, QWidget *parent = nullptr);
     StudentInfoWindow();
     ~StudentInfoWindow();
 
@@ -30,6 +30,7 @@ private:
     Database* dtb;
     StudentResident student;
     QPushButton* createStyledButton(int type, const QString &text, QWidget *parent);
+    void fullSetupUi(const StudentResident &studentData);
 };
 
 #endif // STUDENTINFOWINDOW_H

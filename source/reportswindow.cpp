@@ -1,8 +1,8 @@
 #include "./../headers/reportswindow.h"
 #include "ui_reportswindow.h"
 
-ReportsWindow::ReportsWindow(QWidget *parent)
-    : QDialog(parent)
+ReportsWindow::ReportsWindow(Database* db, QWidget *parent)
+    : dtb(db), QDialog(parent)
     , ui(new Ui::ReportsWindow)
 {
     ui->setupUi(this);

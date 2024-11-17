@@ -377,7 +377,7 @@ QComboBox::item:selected {
      <bool>false</bool>
     </property>
     <property name="placeholderText">
-     <string>Вид активности</string>
+     <string/>
     </property>
    </widget>
   </widget>

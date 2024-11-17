@@ -1,5 +1,5 @@
-#include "./../headers/mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "./../headers/mainwindow.h"
 #include "./../headers/studentswindow.h"
 #include "./../headers/addstudentwindow.h"
 #include "./../headers/reportswindow.h"
@@ -26,16 +26,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_students_clicked()
 {
-    Students* studWindow;
-    studWindow = new Students(dtb, this);
-    studWindow->show();
+    defaultShowWindow<Students>(dtb, this);
 }
 
 void MainWindow::on_addStudent_clicked()
 {
-    AddStudentWindow* addWindow;
-    addWindow = new AddStudentWindow(dtb, this);
-    addWindow->show();
+    defaultShowWindow<AddStudentWindow>(dtb, this);
 }
 
 void MainWindow::on_closeButton_clicked()
@@ -46,8 +42,12 @@ void MainWindow::on_closeButton_clicked()
 
 void MainWindow::on_reports_clicked()
 {
-    ReportsWindow* reports;
-    reports = new ReportsWindow(this);
-    reports->show();
+    defaultShowWindow<ReportsWindow>(dtb, this);
+}
+
+template <typename WindowType>
+void MainWindow::defaultShowWindow(Database* dtb, QWidget* current){
+    WindowType* window = new WindowType(dtb, current);
+    window->show();
 }
 

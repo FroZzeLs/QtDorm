@@ -8,6 +8,7 @@
 #include <QVariant>
 #include <QStatusBar>
 #include "studentresident.h"
+#include "list.h"
 
 class Database {
 public:
@@ -20,8 +21,8 @@ public:
     bool removeStudent(int studentId);
     bool updateStudent(const StudentResident& oldInfo, const StudentResident& newInfo);
 
-    QList<StudentResident> searchStudents(int floor);
-    QList<StudentResident> searchStudents(const QString& surname, const QString& name, const QString& patronym, int blockNumber);
+    List<StudentResident> searchStudents(int floor);
+    List<StudentResident> searchStudents(const QString& surname, const QString& name, const QString& patronym, int blockNumber);
 
     QSqlDatabase getDb() const;
 

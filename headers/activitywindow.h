@@ -13,6 +13,7 @@ class ActivityWindow : public QWidget {
 
 public:
     explicit ActivityWindow(QWidget *parent = nullptr);
+    void initializeActivity();
 
 protected:
     virtual void displayActivity() = 0;
