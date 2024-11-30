@@ -1,0 +1,20 @@
+{
+	"BUILD_DIR" : "/home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen",
+	"CMAKE_BINARY_DIR" : "/home/sergey/Dormitory/build/Desktop-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/sergey/Dormitory/build/Desktop-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/sergey/Dormitory",
+	"CMAKE_SOURCE_DIR" : "/home/sergey/Dormitory",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/include",
+	"INPUTS" : [ "/home/sergey/Dormitory/img/small_logo.jpg" ],
+	"LOCK_FILE" : "/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles/Dormitory_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles/Dormitory_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/sergey/Dormitory/resource.qrc",
+	"VERBOSITY" : 0
+}

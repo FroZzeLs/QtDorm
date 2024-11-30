@@ -1,55 +1,75 @@
 #ifndef LIST_H
 #define LIST_H
 #include <stdexcept>
-#include <cstddef>
+#include "listiterator.h"
 
 template <typename T>
 class List {
 private:
 
     T* data;
-    size_t size;
-    size_t capacity;
+    size_t size = 0;
+    size_t capacity = 1;
 
-    void resize(size_t new_capacity) {
-        T* new_data = new T[new_capacity];
+    void resize(size_t newCapacity) {
+        T* newData = new T[newCapacity];
         for (size_t i = 0; i < size; ++i) {
-            new_data[i] = data[i];
+            newData[i] = data[i];
         }
         delete[] data;
-        data = new_data;
-        capacity = new_capacity;
+        data = newData;
+        capacity = newCapacity;
     }
 
 public:
-    List() : size(0), capacity(1) {
+    List() {
         data = new T[capacity];
+    }
+
+    List(const List& other) : size(other.size), capacity(other.capacity) {
+        data = new T[capacity];
+        for (size_t i = 0; i < size; ++i) {
+            data[i] = other.data[i];
+        }
     }
 
     ~List() {
         delete[] data;
     }
 
+    List& operator=(const List& other) {
+        if (this != &other) {
+            delete[] data;
+            size = other.size;
+            capacity = other.capacity;
+            data = new T[capacity];
+            for (size_t i = 0; i < size; ++i) {
+                data[i] = other.data[i];
+            }
+        }
+        return *this;
+    }
+
     void append(const T& value) {
         if (size >= capacity) {
-            resize(capacity * 2);
+            resize(capacity + 1);
         }
         data[size++] = value;
     }
 
-    T* begin() {
+    ListIterator<T> begin() {
         return data;
     }
 
-    T* end() {
+    ListIterator<T> end() {
         return data + size;
     }
 
-    const T* begin() const{
+    const ListIterator<T> begin() const{
         return data;
     }
 
-    const T* end() const{
+    const ListIterator<T> end() const{
         return data + size;
     }
 

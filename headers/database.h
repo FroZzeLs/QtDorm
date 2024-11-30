@@ -22,7 +22,7 @@ public:
     bool updateStudent(const StudentResident& oldInfo, const StudentResident& newInfo);
 
     List<StudentResident> searchStudents(int floor);
-    List<StudentResident> searchStudents(const QString& surname, const QString& name, const QString& patronym, int blockNumber);
+    List<StudentResident> searchStudents(int type, const QString& surname, const QString& name, const QString& patronym, int blockNumber);
 
     QSqlDatabase getDb() const;
 

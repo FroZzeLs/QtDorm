@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1af9147086931fecaa1e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Dormitory",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Dormitory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dormitory-Debug-2c714059e4b412de7c54.json",
+					"name" : "Dormitory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dormitory_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dormitory_autogen-Debug-96b88859985e0f99efed.json",
+					"name" : "Dormitory_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Dormitory_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Dormitory_autogen_timestamp_deps-Debug-a32f815df462701421c9.json",
+					"name" : "Dormitory_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sergey/Dormitory/build/Desktop-Debug",
+		"source" : "/home/sergey/Dormitory"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

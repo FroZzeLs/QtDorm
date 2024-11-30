@@ -112,7 +112,7 @@ void Students::showStudentDetails(StudentResident student){
 
 void Students::on_searchButton_clicked()
 {
-    displayStudents(dtb->searchStudents(ui->surname->text(), ui->name->text(), ui->patronym->text(), ui->block->text().toInt()), scrollArea);
+    displayStudents(dtb->searchStudents(0, ui->surname->text(), ui->name->text(), ui->patronym->text(), ui->block->text().toInt()), scrollArea);
 }
 
 

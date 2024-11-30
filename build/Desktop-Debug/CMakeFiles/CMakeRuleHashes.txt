@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+fd5a1864707de6eff53798fa902e15fc CMakeFiles/Dormitory_autogen
+fd5a1864707de6eff53798fa902e15fc CMakeFiles/Dormitory_autogen_timestamp_deps
+36ad5a200c90297d8042410282d7e40b Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp
+24a3b90c5ea6125984b3ae05263abb35 Dormitory_autogen/timestamp

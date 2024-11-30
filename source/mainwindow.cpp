@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    dtb = new Database("./../../Dormitory.db", statusBar());
+    dtb = new Database("/home/sergey/Dormitory/Dormitory.db", statusBar());
     dtb->createTables();
     QPixmap pix(":/bsuir/img/small_logo.jpg");
     int width = ui->bsuirLogo->width();

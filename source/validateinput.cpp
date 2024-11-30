@@ -6,7 +6,7 @@
 void validateInput(const QString& surname, const QString& name, const QString& patronym,
                    const QString& phoneNumber, const QString& age,
                    const QString& blockNumber, const QString& opt) {
-    QRegularExpression nameRegex("^[A-ZА-ЯЁ][a-zA-Zа-яё]*$");
+    QRegularExpression nameRegex("^[A-ZА-ЯЁ][a-zA-Zа-яё]*(?:-[A-ZА-ЯЁ][a-zA-Zа-яё]*)?$");
     if (!nameRegex.match(surname).hasMatch() ||
         !nameRegex.match(name).hasMatch() ||
         !patronym.isEmpty() && !nameRegex.match(patronym).hasMatch()) {

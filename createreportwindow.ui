@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateReportWindow</class>
+ <widget class="QDialog" name="CreateReportWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для окна */
+    border-radius: 12px; /* Закругленные углы */
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>91</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 18px; /* Размер шрифта кнопки */
+font-weight: bold; /* Жирный текст */</string>
+    </property>
+    <property name="text">
+     <string>Фильтры</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="patronymEdit">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>155</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 4px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 14px; /* Размер шрифта */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Отчество</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameEdit">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>105</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 4px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 14px; /* Размер шрифта */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="blockEdit">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>205</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 4px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 14px; /* Размер шрифта */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Номер блока</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="surnameEdit">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>55</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 4px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 14px; /* Размер шрифта */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>320</y>
+     <width>541</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>539</width>
+      <height>359</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>191</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для окна */
+    border-radius: 12px; /* Закругленные углы */
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>171</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="checkSNP">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+	 background-color: white; 
+    border: 2px solid #1E90FF; 
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00FF00; 
+}
+
+QCheckBox::indicator:checked:pressed {
+    background-color: #000080; 
+}
+
+QCheckBox::indicator:hover {
+    background-color: #00BFFF; 
+}</string>
+       </property>
+       <property name="text">
+        <string>ФИО</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkAge">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: white; /* Изначально белый фон */
+    border: 2px solid #1E90FF; /* Граница для видимости */
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Белый фон, когда не выбран */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00FF00; /* Тёмно-синий фон при выборе */
+}
+
+QCheckBox::indicator:checked:pressed {
+    background-color: #000080; /* Темно-синий фон при нажатии */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #00BFFF; /* Светло-синий при наведении */
+}
+
+/* Убираем лишние стили для галочки */
+QCheckBox::indicator:checked {
+    border: 2px solid #1E90FF; /* Граница при выборе */
+}</string>
+       </property>
+       <property name="text">
+        <string>Возраст</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkPhone">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: white; /* Изначально белый фон */
+    border: 2px solid #1E90FF; /* Граница для видимости */
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Белый фон, когда не выбран */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00FF00; /* Тёмно-синий фон при выборе */
+}
+
+QCheckBox::indicator:checked:pressed {
+    background-color: #000080; /* Темно-синий фон при нажатии */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #00BFFF; /* Светло-синий при наведении */
+}
+
+/* Убираем лишние стили для галочки */
+QCheckBox::indicator:checked {
+    border: 2px solid #1E90FF; /* Граница при выборе */
+}</string>
+       </property>
+       <property name="text">
+        <string>Номер телефона</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBlock">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: white; /* Изначально белый фон */
+    border: 2px solid #1E90FF; /* Граница для видимости */
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Белый фон, когда не выбран */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00FF00; /* Тёмно-синий фон при выборе */
+}
+
+QCheckBox::indicator:checked:pressed {
+    background-color: #000080; /* Темно-синий фон при нажатии */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #00BFFF; /* Светло-синий при наведении */
+}
+
+/* Убираем лишние стили для галочки */
+QCheckBox::indicator:checked {
+    border: 2px solid #1E90FF; /* Граница при выборе */
+}</string>
+       </property>
+       <property name="text">
+        <string>Номер блока</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkOpt">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: white; /* Изначально белый фон */
+    border: 2px solid #1E90FF; /* Граница для видимости */
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white; /* Белый фон, когда не выбран */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00FF00; /* Тёмно-синий фон при выборе */
+}
+
+QCheckBox::indicator:checked:pressed {
+    background-color: #000080; /* Темно-синий фон при нажатии */
+}
+
+QCheckBox::indicator:hover {
+    background-color: #00BFFF; /* Светло-синий при наведении */
+}
+
+/* Убираем лишние стили для галочки */
+QCheckBox::indicator:checked {
+    border: 2px solid #1E90FF; /* Граница при выборе */
+}</string>
+       </property>
+       <property name="text">
+        <string>Часы ОПТ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>20</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 18px; /* Размер шрифта кнопки */
+font-weight: bold; /* Жирный текст */</string>
+    </property>
+    <property name="text">
+     <string>Содержание отчёта</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="searchButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>270</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin-top: 5px; /* Отступ сверху */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+   </property>
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createReportButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>690</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 18px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin-top: 5px; /* Отступ сверху */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+   </property>
+   <property name="text">
+    <string>Создать отчёт</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="titleEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>690</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 4px; /* Закругленные углы */
+    padding: 2px; /* Отступы внутри поля */
+    font-size: 14px; /* Размер шрифта */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Заголовок отчёта</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

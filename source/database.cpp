@@ -182,12 +182,12 @@ bool Database::removeStudent(int studentId) {
     return true;
 }
 
-List<StudentResident> Database::searchStudents(const QString& surname, const QString& name,
-                                                const QString& patronym, int blockNumber) {
+List<StudentResident> Database::searchStudents(int type, const QString& surname, const QString& name,
+                                               const QString& patronym, int blockNumber) {
     List<StudentResident> students;
     QSqlQuery query;
 
-    QString sql = "SELECT * FROM Students WHERE 1=1 "; // 1=1 позволяет легко добавлять условия
+    QString sql = "SELECT * FROM Students WHERE 1=1 ";
 
     if (!surname.isEmpty()) {
         sql += "AND surname LIKE ? ";
@@ -200,6 +200,15 @@ List<StudentResident> Database::searchStudents(const QString& surname, const QSt
     }
     if (blockNumber > 0) {
         sql += "AND blockNumber = ? ";
+    }
+    if(type == 1){
+        sql += "AND debtor = 1";
+    }
+    else if(type == 2){
+        sql += "AND studActive = 1";
+    }
+    else if(type == 3){
+        sql += "AND studActive = 2";
     }
 
     query.prepare(sql);
