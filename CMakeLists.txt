@@ -45,7 +45,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         headers/invalidphonenumberexception.h source/invalidphonenumberexception.cpp
         headers/invalidnumberexception.h source/invalidnumberexception.cpp
         headers/validateinput.h source/validateinput.cpp
-        createreportwindow.cpp createreportwindow.h createreportwindow.ui
+        source/createreportwindow.cpp headers/createreportwindow.h source/createreportwindow.ui
         headers/listiterator.h
 
 

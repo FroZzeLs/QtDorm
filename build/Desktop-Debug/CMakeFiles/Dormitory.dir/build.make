@@ -377,19 +377,19 @@ CMakeFiles/Dormitory.dir/source/validateinput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/validateinput.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/validateinput.cpp -o CMakeFiles/Dormitory.dir/source/validateinput.cpp.s
 
-CMakeFiles/Dormitory.dir/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
-CMakeFiles/Dormitory.dir/createreportwindow.cpp.o: /home/sergey/Dormitory/createreportwindow.cpp
-CMakeFiles/Dormitory.dir/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Dormitory.dir/createreportwindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/createreportwindow.cpp.o -MF CMakeFiles/Dormitory.dir/createreportwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/createreportwindow.cpp.o -c /home/sergey/Dormitory/createreportwindow.cpp
+CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: /home/sergey/Dormitory/source/createreportwindow.cpp
+CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o -c /home/sergey/Dormitory/source/createreportwindow.cpp
 
-CMakeFiles/Dormitory.dir/createreportwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/createreportwindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/createreportwindow.cpp > CMakeFiles/Dormitory.dir/createreportwindow.cpp.i
+CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/createreportwindow.cpp > CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i
 
-CMakeFiles/Dormitory.dir/createreportwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/createreportwindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/createreportwindow.cpp -o CMakeFiles/Dormitory.dir/createreportwindow.cpp.s
+CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/createreportwindow.cpp -o CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s
 
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o: Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp
@@ -428,7 +428,7 @@ Dormitory_OBJECTS = \
 "CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/validateinput.cpp.o" \
-"CMakeFiles/Dormitory.dir/createreportwindow.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o"
 
 # External object files for target Dormitory
@@ -455,7 +455,7 @@ Dormitory: CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/validateinput.cpp.o
-Dormitory: CMakeFiles/Dormitory.dir/createreportwindow.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/build.make
 Dormitory: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2

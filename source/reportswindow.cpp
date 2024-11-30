@@ -1,6 +1,6 @@
 #include "./../headers/reportswindow.h"
 #include "ui_reportswindow.h"
-#include "./../createreportwindow.h"
+#include "./../headers/createreportwindow.h"
 
 ReportsWindow::ReportsWindow(Database* db, QWidget *parent)
     : dtb(db), QDialog(parent)

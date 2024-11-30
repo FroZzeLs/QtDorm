@@ -437,6 +437,4 @@ CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/sergey/Dormitory/source/./../createreportwindow.h \
- /home/sergey/Dormitory/source/./../headers/database.h \
- /home/sergey/Dormitory/source/./../headers/list.h
+ /home/sergey/Dormitory/source/./../headers/createreportwindow.h

@@ -4,12 +4,11 @@ Dormitory_autogen/timestamp: \
 	/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/moc_predefs.h \
-	/home/sergey/Dormitory/createreportwindow.cpp \
-	/home/sergey/Dormitory/createreportwindow.h \
 	/home/sergey/Dormitory/headers/activitywindow.h \
 	/home/sergey/Dormitory/headers/addstudentwindow.h \
 	/home/sergey/Dormitory/headers/blockmanager.h \
 	/home/sergey/Dormitory/headers/councilactivitywindow.h \
+	/home/sergey/Dormitory/headers/createreportwindow.h \
 	/home/sergey/Dormitory/headers/database.h \
 	/home/sergey/Dormitory/headers/inputexception.h \
 	/home/sergey/Dormitory/headers/invalidnameexception.h \
@@ -33,6 +32,7 @@ Dormitory_autogen/timestamp: \
 	/home/sergey/Dormitory/source/addstudentwindow.cpp \
 	/home/sergey/Dormitory/source/blockmanager.cpp \
 	/home/sergey/Dormitory/source/councilactivitywindow.cpp \
+	/home/sergey/Dormitory/source/createreportwindow.cpp \
 	/home/sergey/Dormitory/source/database.cpp \
 	/home/sergey/Dormitory/source/inputexception.cpp \
 	/home/sergey/Dormitory/source/invalidnameexception.cpp \
@@ -628,8 +628,8 @@ Dormitory_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
-	/home/sergey/Dormitory/createreportwindow.ui \
 	/home/sergey/Dormitory/source/addstudentwindow.ui \
+	/home/sergey/Dormitory/source/createreportwindow.ui \
 	/home/sergey/Dormitory/source/mainwindow.ui \
 	/home/sergey/Dormitory/source/reportswindow.ui \
 	/home/sergey/Dormitory/source/studentinfowindow.ui \

@@ -248,30 +248,6 @@ Dormitory_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.s
 .PHONY : Dormitory_autogen/mocs_compilation.cpp.s
 
-createreportwindow.o: createreportwindow.cpp.o
-.PHONY : createreportwindow.o
-
-# target to build an object file
-createreportwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/createreportwindow.cpp.o
-.PHONY : createreportwindow.cpp.o
-
-createreportwindow.i: createreportwindow.cpp.i
-.PHONY : createreportwindow.i
-
-# target to preprocess a source file
-createreportwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/createreportwindow.cpp.i
-.PHONY : createreportwindow.cpp.i
-
-createreportwindow.s: createreportwindow.cpp.s
-.PHONY : createreportwindow.s
-
-# target to generate assembly for a file
-createreportwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/createreportwindow.cpp.s
-.PHONY : createreportwindow.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -391,6 +367,30 @@ source/councilactivitywindow.s: source/councilactivitywindow.cpp.s
 source/councilactivitywindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.s
 .PHONY : source/councilactivitywindow.cpp.s
+
+source/createreportwindow.o: source/createreportwindow.cpp.o
+.PHONY : source/createreportwindow.o
+
+# target to build an object file
+source/createreportwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o
+.PHONY : source/createreportwindow.cpp.o
+
+source/createreportwindow.i: source/createreportwindow.cpp.i
+.PHONY : source/createreportwindow.i
+
+# target to preprocess a source file
+source/createreportwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i
+.PHONY : source/createreportwindow.cpp.i
+
+source/createreportwindow.s: source/createreportwindow.cpp.s
+.PHONY : source/createreportwindow.s
+
+# target to generate assembly for a file
+source/createreportwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s
+.PHONY : source/createreportwindow.cpp.s
 
 source/database.o: source/database.cpp.o
 .PHONY : source/database.o
@@ -773,9 +773,6 @@ help:
 	@echo "... Dormitory_autogen/mocs_compilation.o"
 	@echo "... Dormitory_autogen/mocs_compilation.i"
 	@echo "... Dormitory_autogen/mocs_compilation.s"
-	@echo "... createreportwindow.o"
-	@echo "... createreportwindow.i"
-	@echo "... createreportwindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -791,6 +788,9 @@ help:
 	@echo "... source/councilactivitywindow.o"
 	@echo "... source/councilactivitywindow.i"
 	@echo "... source/councilactivitywindow.s"
+	@echo "... source/createreportwindow.o"
+	@echo "... source/createreportwindow.i"
+	@echo "... source/createreportwindow.s"
 	@echo "... source/database.o"
 	@echo "... source/database.i"
 	@echo "... source/database.s"
