@@ -408,8 +408,6 @@ CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o: \
  /home/sergey/Dormitory/source/./../headers/listiterator.h \
  /home/sergey/Dormitory/source/./../headers/councilactivitywindow.h \
  /home/sergey/Dormitory/source/./../headers/activitywindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \

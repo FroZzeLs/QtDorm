@@ -45,35 +45,34 @@ public:
     QLabel *label_2;
     QPushButton *searchButton;
     QPushButton *createReportButton;
-    QLineEdit *titleEdit;
 
     void setupUi(QDialog *CreateReportWindow)
     {
         if (CreateReportWindow->objectName().isEmpty())
             CreateReportWindow->setObjectName("CreateReportWindow");
-        CreateReportWindow->resize(555, 744);
+        CreateReportWindow->resize(1171, 739);
         groupBox = new QGroupBox(CreateReportWindow);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(10, 10, 331, 251));
+        groupBox->setGeometry(QRect(10, 10, 321, 351));
         groupBox->setStyleSheet(QString::fromUtf8("QWidget {\n"
 "    background-color: #007BFF; /* \320\241\320\270\320\275\320\270\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\276\320\272\320\275\320\260 */\n"
 "    border-radius: 12px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "}"));
         label = new QLabel(groupBox);
         label->setObjectName("label");
-        label->setGeometry(QRect(130, 20, 91, 18));
+        label->setGeometry(QRect(110, 10, 111, 21));
         label->setStyleSheet(QString::fromUtf8("color: #FFFFFF;\n"
-"font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
+"font-size: 24px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "font-weight: bold; /* \320\226\320\270\321\200\320\275\321\213\320\271 \321\202\320\265\320\272\321\201\321\202 */"));
         patronymEdit = new QLineEdit(groupBox);
         patronymEdit->setObjectName("patronymEdit");
-        patronymEdit->setGeometry(QRect(15, 155, 301, 31));
+        patronymEdit->setGeometry(QRect(10, 200, 301, 51));
         patronymEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: #FFFFFF; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\277\320\276\320\273\320\265\320\271 \320\262\320\262\320\276\320\264\320\260 */\n"
 "    border: 2px solid #0056b3; /* \320\241\320\270\320\275\321\217\321\217 \321\200\320\260\320\274\320\272\320\260 */\n"
 "    border-radius: 4px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 2px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\277\320\276\320\273\321\217 */\n"
-"    font-size: 14px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
@@ -82,13 +81,13 @@ public:
 "}"));
         nameEdit = new QLineEdit(groupBox);
         nameEdit->setObjectName("nameEdit");
-        nameEdit->setGeometry(QRect(15, 105, 301, 31));
+        nameEdit->setGeometry(QRect(10, 120, 301, 51));
         nameEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: #FFFFFF; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\277\320\276\320\273\320\265\320\271 \320\262\320\262\320\276\320\264\320\260 */\n"
 "    border: 2px solid #0056b3; /* \320\241\320\270\320\275\321\217\321\217 \321\200\320\260\320\274\320\272\320\260 */\n"
 "    border-radius: 4px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 2px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\277\320\276\320\273\321\217 */\n"
-"    font-size: 14px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
@@ -97,13 +96,13 @@ public:
 "}"));
         blockEdit = new QLineEdit(groupBox);
         blockEdit->setObjectName("blockEdit");
-        blockEdit->setGeometry(QRect(15, 205, 301, 31));
+        blockEdit->setGeometry(QRect(10, 280, 301, 51));
         blockEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: #FFFFFF; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\277\320\276\320\273\320\265\320\271 \320\262\320\262\320\276\320\264\320\260 */\n"
 "    border: 2px solid #0056b3; /* \320\241\320\270\320\275\321\217\321\217 \321\200\320\260\320\274\320\272\320\260 */\n"
 "    border-radius: 4px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 2px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\277\320\276\320\273\321\217 */\n"
-"    font-size: 14px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
@@ -112,13 +111,13 @@ public:
 "}"));
         surnameEdit = new QLineEdit(groupBox);
         surnameEdit->setObjectName("surnameEdit");
-        surnameEdit->setGeometry(QRect(15, 55, 301, 31));
+        surnameEdit->setGeometry(QRect(10, 40, 301, 51));
         surnameEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: #FFFFFF; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\277\320\276\320\273\320\265\320\271 \320\262\320\262\320\276\320\264\320\260 */\n"
 "    border: 2px solid #0056b3; /* \320\241\320\270\320\275\321\217\321\217 \321\200\320\260\320\274\320\272\320\260 */\n"
 "    border-radius: 4px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 2px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\277\320\276\320\273\321\217 */\n"
-"    font-size: 14px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
@@ -127,22 +126,22 @@ public:
 "}"));
         scrollArea = new QScrollArea(CreateReportWindow);
         scrollArea->setObjectName("scrollArea");
-        scrollArea->setGeometry(QRect(7, 320, 541, 361));
+        scrollArea->setGeometry(QRect(360, 10, 801, 641));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 539, 359));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 799, 639));
         scrollArea->setWidget(scrollAreaWidgetContents);
         groupBox_2 = new QGroupBox(CreateReportWindow);
         groupBox_2->setObjectName("groupBox_2");
-        groupBox_2->setGeometry(QRect(350, 10, 191, 251));
+        groupBox_2->setGeometry(QRect(10, 370, 321, 291));
         groupBox_2->setStyleSheet(QString::fromUtf8("QWidget {\n"
 "    background-color: #007BFF; /* \320\241\320\270\320\275\320\270\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\276\320\272\320\275\320\260 */\n"
 "    border-radius: 12px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "}"));
         verticalLayoutWidget = new QWidget(groupBox_2);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(10, 50, 171, 191));
+        verticalLayoutWidget->setGeometry(QRect(10, 50, 231, 231));
         verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -152,7 +151,7 @@ public:
         checkSNP->setMouseTracking(true);
         checkSNP->setStyleSheet(QString::fromUtf8("QCheckBox {\n"
 "    color: white;\n"
-"    font-size: 14px;\n"
+"    font-size: 18px;\n"
 "    font-weight: bold;\n"
 "    spacing: 8px;\n"
 "}\n"
@@ -161,20 +160,31 @@ public:
 "    width: 18px;\n"
 "    height: 18px;\n"
 "    border-radius: 4px;\n"
-"	 background-color: white; \n"
-"    border: 2px solid #1E90FF; \n"
+"    background-color: white; /* \320\230\320\267\320\275\320\260\321\207\320\260\320\273\321\214\320\275\320\276 \320\261\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 */\n"
+"    border: 2px solid #1E90FF; /* \320\223\321\200\320\260\320\275\320\270\321\206\320\260 \320\264\320\273\321\217 \320\262\320\270\320\264\320\270\320\274\320\276\321\201\321\202\320\270 */\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:unchecked {\n"
+"    background-color: white; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275, \320\272\320\276\320\263\320\264\320\260 \320\275\320\265 \320\262\321\213\320\261\321\200\320\260\320\275 */\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:checked {\n"
-"    background-color: #00FF00; \n"
+"    background-color: #00FF00; /* \320\242\321\221\320\274\320\275\320\276-\321\201\320\270\320\275\320\270\320\271"
+                        " \321\204\320\276\320\275 \320\277\321\200\320\270 \320\262\321\213\320\261\320\276\321\200\320\265 */\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:checked:pressed {\n"
-"    background-color: #000080; \n"
+"    background-color: #000080; /* \320\242\320\265\320\274\320\275\320\276-\321\201\320\270\320\275\320\270\320\271 \321\204\320\276\320\275 \320\277\321\200\320\270 \320\275\320\260\320\266\320\260\321\202\320\270\320\270 */\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:hover {\n"
-"    background-color: #00BFFF; \n"
+"    background-color: #00BFFF; /* \320\241\320\262\320\265\321\202\320\273\320\276-\321\201\320\270\320\275\320\270\320\271 \320\277\321\200\320\270 \320\275\320\260\320\262\320\265\320\264\320\265\320\275\320\270\320\270 */\n"
+"}\n"
+"\n"
+"/* \320\243\320\261\320\270\321\200\320\260\320\265\320\274 \320\273\320\270\321\210\320\275\320\270\320\265 \321\201\321\202\320\270\320\273\320\270 \320\264\320\273\321\217 \320\263\320\260\320\273\320\276\321\207\320\272\320\270 */\n"
+"QCheckBox::indicator:checked {\n"
+"    border: 2px solid #1E90FF; /* \320\223\321\200\320\260\320\275\320\270\321"
+                        "\206\320\260 \320\277\321\200\320\270 \320\262\321\213\320\261\320\276\321\200\320\265 */\n"
 "}"));
 
         verticalLayout_2->addWidget(checkSNP);
@@ -184,7 +194,7 @@ public:
         checkAge->setCursor(QCursor(Qt::PointingHandCursor));
         checkAge->setStyleSheet(QString::fromUtf8("QCheckBox {\n"
 "    color: white;\n"
-"    font-size: 14px;\n"
+"    font-size: 18px;\n"
 "    font-weight: bold;\n"
 "    spacing: 8px;\n"
 "}\n"
@@ -227,7 +237,7 @@ public:
         checkPhone->setCursor(QCursor(Qt::PointingHandCursor));
         checkPhone->setStyleSheet(QString::fromUtf8("QCheckBox {\n"
 "    color: white;\n"
-"    font-size: 14px;\n"
+"    font-size: 18px;\n"
 "    font-weight: bold;\n"
 "    spacing: 8px;\n"
 "}\n"
@@ -270,7 +280,7 @@ public:
         checkBlock->setCursor(QCursor(Qt::PointingHandCursor));
         checkBlock->setStyleSheet(QString::fromUtf8("QCheckBox {\n"
 "    color: white;\n"
-"    font-size: 14px;\n"
+"    font-size: 18px;\n"
 "    font-weight: bold;\n"
 "    spacing: 8px;\n"
 "}\n"
@@ -313,7 +323,7 @@ public:
         checkOpt->setCursor(QCursor(Qt::PointingHandCursor));
         checkOpt->setStyleSheet(QString::fromUtf8("QCheckBox {\n"
 "    color: white;\n"
-"    font-size: 14px;\n"
+"    font-size: 18px;\n"
 "    font-weight: bold;\n"
 "    spacing: 8px;\n"
 "}\n"
@@ -353,21 +363,21 @@ public:
 
         label_2 = new QLabel(groupBox_2);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(7, 20, 181, 21));
+        label_2->setGeometry(QRect(40, 10, 241, 21));
         label_2->setStyleSheet(QString::fromUtf8("color: #FFFFFF;\n"
-"font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
+"font-size: 24px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "font-weight: bold; /* \320\226\320\270\321\200\320\275\321\213\320\271 \321\202\320\265\320\272\321\201\321\202 */"));
         searchButton = new QPushButton(CreateReportWindow);
         searchButton->setObjectName("searchButton");
-        searchButton->setGeometry(QRect(220, 270, 111, 31));
+        searchButton->setGeometry(QRect(60, 670, 211, 51));
         searchButton->setCursor(QCursor(Qt::PointingHandCursor));
         searchButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #0056b3; /* \320\236\321\201\320\275\320\276\320\262\320\275\320\276\320\271 \321\206\320\262\320\265\321\202 \321\204\320\276\320\275\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "    color: white; /* \320\246\320\262\320\265\321\202 \321\202\320\265\320\272\321\201\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "    border: none; /* \320\243\320\261\320\270\321\200\320\260\320\265\320\274 \321\200\320\260\320\274\320\272\320\270 */\n"
-"    border-radius: 6px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
+"    border-radius: 12px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 5px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
-"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277"
+"    font-size: 22px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277"
                         "\320\272\320\270 */\n"
 "    font-weight: bold; /* \320\226\320\270\321\200\320\275\321\213\320\271 \321\202\320\265\320\272\321\201\321\202 */\n"
 "    margin-top: 5px; /* \320\236\321\202\321\201\321\202\321\203\320\277 \321\201\320\262\320\265\321\200\321\205\321\203 */\n"
@@ -382,15 +392,15 @@ public:
 "}"));
         createReportButton = new QPushButton(CreateReportWindow);
         createReportButton->setObjectName("createReportButton");
-        createReportButton->setGeometry(QRect(390, 690, 161, 41));
+        createReportButton->setGeometry(QRect(630, 660, 281, 61));
         createReportButton->setCursor(QCursor(Qt::PointingHandCursor));
         createReportButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #0056b3; /* \320\236\321\201\320\275\320\276\320\262\320\275\320\276\320\271 \321\206\320\262\320\265\321\202 \321\204\320\276\320\275\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "    color: white; /* \320\246\320\262\320\265\321\202 \321\202\320\265\320\272\321\201\321\202\320\260 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
 "    border: none; /* \320\243\320\261\320\270\321\200\320\260\320\265\320\274 \321\200\320\260\320\274\320\272\320\270 */\n"
-"    border-radius: 6px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
+"    border-radius: 12px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
 "    padding: 5px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\272\320\275\320\276\320\277\320\272\320\270 */\n"
-"    font-size: 18px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277"
+"    font-size: 22px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 \320\272\320\275\320\276\320\277"
                         "\320\272\320\270 */\n"
 "    font-weight: bold; /* \320\226\320\270\321\200\320\275\321\213\320\271 \321\202\320\265\320\272\321\201\321\202 */\n"
 "    margin-top: 5px; /* \320\236\321\202\321\201\321\202\321\203\320\277 \321\201\320\262\320\265\321\200\321\205\321\203 */\n"
@@ -402,21 +412,6 @@ public:
 "\n"
 "QPushButton:pressed {\n"
 "    background-color: #003366; /* \320\246\320\262\320\265\321\202 \320\277\321\200\320\270 \320\275\320\260\320\266\320\260\321\202\320\270\320\270 */\n"
-"}"));
-        titleEdit = new QLineEdit(CreateReportWindow);
-        titleEdit->setObjectName("titleEdit");
-        titleEdit->setGeometry(QRect(10, 690, 371, 41));
-        titleEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
-"    background-color: #FFFFFF; /* \320\221\320\265\320\273\321\213\320\271 \321\204\320\276\320\275 \320\264\320\273\321\217 \320\277\320\276\320\273\320\265\320\271 \320\262\320\262\320\276\320\264\320\260 */\n"
-"    border: 2px solid #0056b3; /* \320\241\320\270\320\275\321\217\321\217 \321\200\320\260\320\274\320\272\320\260 */\n"
-"    border-radius: 4px; /* \320\227\320\260\320\272\321\200\321\203\320\263\320\273\320\265\320\275\320\275\321\213\320\265 \321\203\320\263\320\273\321\213 */\n"
-"    padding: 2px; /* \320\236\321\202\321\201\321\202\321\203\320\277\321\213 \320\262\320\275\321\203\321\202\321\200\320\270 \320\277\320\276\320\273\321\217 */\n"
-"    font-size: 14px; /* \320\240\320\260\320\267\320\274\320\265\321\200 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"    border-color: #007BFF; /* \320\246\320\262\320\265\321\202 \321\200\320\260\320\274\320\272\320\270 \320\277\321\200\320\270 \321\204\320\276\320\272\321\203\321\201\320\265 *"
-                        "/\n"
 "}"));
 
         retranslateUi(CreateReportWindow);
@@ -442,7 +437,6 @@ public:
         label_2->setText(QCoreApplication::translate("CreateReportWindow", "\320\241\320\276\320\264\320\265\321\200\320\266\320\260\320\275\320\270\320\265 \320\276\321\202\321\207\321\221\321\202\320\260", nullptr));
         searchButton->setText(QCoreApplication::translate("CreateReportWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
         createReportButton->setText(QCoreApplication::translate("CreateReportWindow", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214 \320\276\321\202\321\207\321\221\321\202", nullptr));
-        titleEdit->setPlaceholderText(QCoreApplication::translate("CreateReportWindow", "\320\227\320\260\320\263\320\276\320\273\320\276\320\262\320\276\320\272 \320\276\321\202\321\207\321\221\321\202\320\260", nullptr));
     } // retranslateUi
 
 };

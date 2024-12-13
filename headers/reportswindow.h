@@ -13,8 +13,10 @@ class ReportsWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit ReportsWindow(Database* db, QWidget *parent = nullptr);
+    ReportsWindow(Database* db, QPushButton* lstClicked, QWidget *parent = nullptr);
     ~ReportsWindow();
+
+    void defaultShowWidget(int type, QWidget* current);
 
 private slots:
     void on_exit_clicked();
@@ -30,6 +32,8 @@ private slots:
 private:
     Ui::ReportsWindow *ui;
     Database* dtb;
+    QPushButton* lastClickedButton;
+    void changeButtonColor(QPushButton *button);
 };
 
 #endif // REPORTSWINDOW_H

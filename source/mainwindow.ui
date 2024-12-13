@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>313</width>
-    <height>495</height>
+    <width>1920</width>
+    <height>1200</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QLabel" name="bsuirLogo">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>1730</x>
       <y>20</y>
-      <width>121</width>
-      <height>101</height>
+      <width>161</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="text">
@@ -33,10 +33,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>160</y>
-      <width>221</width>
-      <height>241</height>
+      <x>1670</x>
+      <y>480</y>
+      <width>241</width>
+      <height>281</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -49,53 +49,16 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QWidget" name="layoutWidget">
+    <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>201</width>
-       <height>221</height>
+       <width>221</width>
+       <height>261</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QPushButton" name="students">
-        <property name="font">
-         <font>
-          <family>Times New Roman</family>
-          <pointsize>-1</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color: #0056b3; /* Основной цвет фона кнопки */
-    color: white; /* Цвет текста кнопки */
-    border: none; /* Убираем рамки */
-    border-radius: 8px; /* Закругленные углы */
-    padding: 10px; /* Отступы внутри кнопки */
-    font-size: 16px; /* Размер шрифта кнопки */
-    font-weight: bold; /* Жирный текст */
-    margin: 5px 0; /* Отступы между кнопками */
-}
-
-QPushButton:hover {
-    background-color: #004085; /* Цвет при наведении */
-}
-
-QPushButton:pressed {
-    background-color: #003366; /* Цвет при нажатии */
-}</string>
-        </property>
-        <property name="text">
-         <string>Студенты</string>
-        </property>
-       </widget>
-      </item>
       <item>
        <widget class="QPushButton" name="addStudent">
         <property name="font">
@@ -113,9 +76,9 @@ QPushButton:pressed {
     background-color: #0056b3; /* Основной цвет фона кнопки */
     color: white; /* Цвет текста кнопки */
     border: none; /* Убираем рамки */
-    border-radius: 8px; /* Закругленные углы */
+    border-radius: 10px; /* Закругленные углы */
     padding: 10px; /* Отступы внутри кнопки */
-    font-size: 16px; /* Размер шрифта кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
     font-weight: bold; /* Жирный текст */
     margin: 5px 0; /* Отступы между кнопками */
 }
@@ -130,6 +93,43 @@ QPushButton:pressed {
         </property>
         <property name="text">
          <string>Добавить студента</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="students">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin: 5px 0; /* Отступы между кнопками */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Цвет при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+        </property>
+        <property name="text">
+         <string>Студенты</string>
         </property>
        </widget>
       </item>
@@ -150,9 +150,9 @@ QPushButton:pressed {
     background-color: #0056b3; /* Основной цвет фона кнопки */
     color: white; /* Цвет текста кнопки */
     border: none; /* Убираем рамки */
-    border-radius: 8px; /* Закругленные углы */
+    border-radius: 10px; /* Закругленные углы */
     padding: 10px; /* Отступы внутри кнопки */
-    font-size: 16px; /* Размер шрифта кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
     font-weight: bold; /* Жирный текст */
     margin: 5px 0; /* Отступы между кнопками */
 }
@@ -176,10 +176,10 @@ QPushButton:pressed {
    <widget class="QPushButton" name="closeButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>410</y>
-      <width>91</width>
-      <height>41</height>
+      <x>1720</x>
+      <y>1090</y>
+      <width>181</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="cursor">
@@ -192,7 +192,7 @@ QPushButton:pressed {
     border: none; /* Убираем рамки */
     border-radius: 8px; /* Закругленные углы */
     padding: 5px; /* Отступы внутри кнопки */
-    font-size: 16px; /* Размер шрифта кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
     font-weight: bold; /* Жирный текст */
     margin: 5px 0; /* Отступы между кнопками */
 }
@@ -209,13 +209,42 @@ QPushButton:pressed {
      <string>Закрыть</string>
     </property>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1641</width>
+      <height>1131</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="workLayout"/>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1660</x>
+      <y>10</y>
+      <width>271</width>
+      <height>1171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #DCDCDC</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>bsuirLogo</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>closeButton</zorder>
+   <zorder>verticalLayoutWidget_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>313</width>
+     <width>1920</width>
      <height>23</height>
     </rect>
    </property>

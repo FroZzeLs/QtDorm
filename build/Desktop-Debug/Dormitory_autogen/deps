@@ -5,10 +5,9 @@ Dormitory_autogen/timestamp: \
 	/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/moc_predefs.h \
 	/home/sergey/Dormitory/headers/activitywindow.h \
-	/home/sergey/Dormitory/headers/addstudentwindow.h \
-	/home/sergey/Dormitory/headers/blockmanager.h \
+	/home/sergey/Dormitory/headers/addstudentwidget.h \
 	/home/sergey/Dormitory/headers/councilactivitywindow.h \
-	/home/sergey/Dormitory/headers/createreportwindow.h \
+	/home/sergey/Dormitory/headers/createreportwidget.h \
 	/home/sergey/Dormitory/headers/database.h \
 	/home/sergey/Dormitory/headers/inputexception.h \
 	/home/sergey/Dormitory/headers/invalidnameexception.h \
@@ -21,18 +20,19 @@ Dormitory_autogen/timestamp: \
 	/home/sergey/Dormitory/headers/person.h \
 	/home/sergey/Dormitory/headers/reportswindow.h \
 	/home/sergey/Dormitory/headers/resident.h \
+	/home/sergey/Dormitory/headers/studentcouncilmanager.h \
 	/home/sergey/Dormitory/headers/studentinfowindow.h \
 	/home/sergey/Dormitory/headers/studentresident.h \
-	/home/sergey/Dormitory/headers/studentswindow.h \
+	/home/sergey/Dormitory/headers/studentswidget.h \
 	/home/sergey/Dormitory/headers/validateinput.h \
+	/home/sergey/Dormitory/headers/voluntarysquadmanager.h \
 	/home/sergey/Dormitory/headers/voluntarysquadwindow.h \
 	/home/sergey/Dormitory/main.cpp \
 	/home/sergey/Dormitory/resource.qrc \
 	/home/sergey/Dormitory/source/activitywindow.cpp \
-	/home/sergey/Dormitory/source/addstudentwindow.cpp \
-	/home/sergey/Dormitory/source/blockmanager.cpp \
+	/home/sergey/Dormitory/source/addstudentwidget.cpp \
 	/home/sergey/Dormitory/source/councilactivitywindow.cpp \
-	/home/sergey/Dormitory/source/createreportwindow.cpp \
+	/home/sergey/Dormitory/source/createreportwidget.cpp \
 	/home/sergey/Dormitory/source/database.cpp \
 	/home/sergey/Dormitory/source/inputexception.cpp \
 	/home/sergey/Dormitory/source/invalidnameexception.cpp \
@@ -43,10 +43,12 @@ Dormitory_autogen/timestamp: \
 	/home/sergey/Dormitory/source/person.cpp \
 	/home/sergey/Dormitory/source/reportswindow.cpp \
 	/home/sergey/Dormitory/source/resident.cpp \
+	/home/sergey/Dormitory/source/studentcouncilmanager.cpp \
 	/home/sergey/Dormitory/source/studentinfowindow.cpp \
 	/home/sergey/Dormitory/source/studentresident.cpp \
-	/home/sergey/Dormitory/source/studentswindow.cpp \
+	/home/sergey/Dormitory/source/studentswidget.cpp \
 	/home/sergey/Dormitory/source/validateinput.cpp \
+	/home/sergey/Dormitory/source/voluntarysquadmanager.cpp \
 	/home/sergey/Dormitory/source/voluntarysquadwindow.cpp \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
@@ -628,10 +630,10 @@ Dormitory_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
-	/home/sergey/Dormitory/source/addstudentwindow.ui \
-	/home/sergey/Dormitory/source/createreportwindow.ui \
+	/home/sergey/Dormitory/source/addstudentwidget.ui \
+	/home/sergey/Dormitory/source/createreportwidget.ui \
 	/home/sergey/Dormitory/source/mainwindow.ui \
 	/home/sergey/Dormitory/source/reportswindow.ui \
 	/home/sergey/Dormitory/source/studentinfowindow.ui \
-	/home/sergey/Dormitory/source/studentswindow.ui \
+	/home/sergey/Dormitory/source/studentswidget.ui \
 	/usr/bin/cmake

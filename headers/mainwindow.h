@@ -19,7 +19,7 @@ public:
     ~MainWindow();
 
     template <typename WindowType>
-    void defaultShowWindow(Database* dtb, QWidget* current);
+    void defaultShowWidget(Database* dtb, QWidget* current);
 
 private slots:
 

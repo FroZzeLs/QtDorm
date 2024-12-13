@@ -441,16 +441,17 @@ CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o: \
  /home/sergey/Dormitory/source/./../headers/person.h \
  /home/sergey/Dormitory/source/./../headers/list.h \
  /home/sergey/Dormitory/source/./../headers/listiterator.h \
- /home/sergey/Dormitory/source/./../headers/studentswindow.h \
+ /home/sergey/Dormitory/source/./../headers/reportswindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /home/sergey/Dormitory/source/./../headers/addstudentwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /home/sergey/Dormitory/source/./../headers/studentswidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
- /home/sergey/Dormitory/source/./../headers/addstudentwindow.h \
- /home/sergey/Dormitory/source/./../headers/reportswindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h

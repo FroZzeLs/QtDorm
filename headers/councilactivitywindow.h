@@ -7,9 +7,9 @@ class CouncilActivityWindow : public ActivityWindow {
     Q_OBJECT
 
 public:
-    explicit CouncilActivityWindow(QWidget *parent = nullptr);
+    CouncilActivityWindow(Database* db, const StudentResident& student, QWidget *parent = nullptr);
 
-protected:
+private:
     void displayActivity() override;
 };
 

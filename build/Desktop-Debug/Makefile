@@ -296,53 +296,29 @@ source/activitywindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/activitywindow.cpp.s
 .PHONY : source/activitywindow.cpp.s
 
-source/addstudentwindow.o: source/addstudentwindow.cpp.o
-.PHONY : source/addstudentwindow.o
+source/addstudentwidget.o: source/addstudentwidget.cpp.o
+.PHONY : source/addstudentwidget.o
 
 # target to build an object file
-source/addstudentwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o
-.PHONY : source/addstudentwindow.cpp.o
+source/addstudentwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o
+.PHONY : source/addstudentwidget.cpp.o
 
-source/addstudentwindow.i: source/addstudentwindow.cpp.i
-.PHONY : source/addstudentwindow.i
-
-# target to preprocess a source file
-source/addstudentwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.i
-.PHONY : source/addstudentwindow.cpp.i
-
-source/addstudentwindow.s: source/addstudentwindow.cpp.s
-.PHONY : source/addstudentwindow.s
-
-# target to generate assembly for a file
-source/addstudentwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.s
-.PHONY : source/addstudentwindow.cpp.s
-
-source/blockmanager.o: source/blockmanager.cpp.o
-.PHONY : source/blockmanager.o
-
-# target to build an object file
-source/blockmanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o
-.PHONY : source/blockmanager.cpp.o
-
-source/blockmanager.i: source/blockmanager.cpp.i
-.PHONY : source/blockmanager.i
+source/addstudentwidget.i: source/addstudentwidget.cpp.i
+.PHONY : source/addstudentwidget.i
 
 # target to preprocess a source file
-source/blockmanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/blockmanager.cpp.i
-.PHONY : source/blockmanager.cpp.i
+source/addstudentwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.i
+.PHONY : source/addstudentwidget.cpp.i
 
-source/blockmanager.s: source/blockmanager.cpp.s
-.PHONY : source/blockmanager.s
+source/addstudentwidget.s: source/addstudentwidget.cpp.s
+.PHONY : source/addstudentwidget.s
 
 # target to generate assembly for a file
-source/blockmanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/blockmanager.cpp.s
-.PHONY : source/blockmanager.cpp.s
+source/addstudentwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.s
+.PHONY : source/addstudentwidget.cpp.s
 
 source/councilactivitywindow.o: source/councilactivitywindow.cpp.o
 .PHONY : source/councilactivitywindow.o
@@ -368,29 +344,29 @@ source/councilactivitywindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.s
 .PHONY : source/councilactivitywindow.cpp.s
 
-source/createreportwindow.o: source/createreportwindow.cpp.o
-.PHONY : source/createreportwindow.o
+source/createreportwidget.o: source/createreportwidget.cpp.o
+.PHONY : source/createreportwidget.o
 
 # target to build an object file
-source/createreportwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o
-.PHONY : source/createreportwindow.cpp.o
+source/createreportwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o
+.PHONY : source/createreportwidget.cpp.o
 
-source/createreportwindow.i: source/createreportwindow.cpp.i
-.PHONY : source/createreportwindow.i
+source/createreportwidget.i: source/createreportwidget.cpp.i
+.PHONY : source/createreportwidget.i
 
 # target to preprocess a source file
-source/createreportwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i
-.PHONY : source/createreportwindow.cpp.i
+source/createreportwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.i
+.PHONY : source/createreportwidget.cpp.i
 
-source/createreportwindow.s: source/createreportwindow.cpp.s
-.PHONY : source/createreportwindow.s
+source/createreportwidget.s: source/createreportwidget.cpp.s
+.PHONY : source/createreportwidget.s
 
 # target to generate assembly for a file
-source/createreportwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s
-.PHONY : source/createreportwindow.cpp.s
+source/createreportwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.s
+.PHONY : source/createreportwidget.cpp.s
 
 source/database.o: source/database.cpp.o
 .PHONY : source/database.o
@@ -632,6 +608,30 @@ source/resident.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/resident.cpp.s
 .PHONY : source/resident.cpp.s
 
+source/studentcouncilmanager.o: source/studentcouncilmanager.cpp.o
+.PHONY : source/studentcouncilmanager.o
+
+# target to build an object file
+source/studentcouncilmanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o
+.PHONY : source/studentcouncilmanager.cpp.o
+
+source/studentcouncilmanager.i: source/studentcouncilmanager.cpp.i
+.PHONY : source/studentcouncilmanager.i
+
+# target to preprocess a source file
+source/studentcouncilmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.i
+.PHONY : source/studentcouncilmanager.cpp.i
+
+source/studentcouncilmanager.s: source/studentcouncilmanager.cpp.s
+.PHONY : source/studentcouncilmanager.s
+
+# target to generate assembly for a file
+source/studentcouncilmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.s
+.PHONY : source/studentcouncilmanager.cpp.s
+
 source/studentinfowindow.o: source/studentinfowindow.cpp.o
 .PHONY : source/studentinfowindow.o
 
@@ -680,29 +680,29 @@ source/studentresident.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentresident.cpp.s
 .PHONY : source/studentresident.cpp.s
 
-source/studentswindow.o: source/studentswindow.cpp.o
-.PHONY : source/studentswindow.o
+source/studentswidget.o: source/studentswidget.cpp.o
+.PHONY : source/studentswidget.o
 
 # target to build an object file
-source/studentswindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o
-.PHONY : source/studentswindow.cpp.o
+source/studentswidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o
+.PHONY : source/studentswidget.cpp.o
 
-source/studentswindow.i: source/studentswindow.cpp.i
-.PHONY : source/studentswindow.i
+source/studentswidget.i: source/studentswidget.cpp.i
+.PHONY : source/studentswidget.i
 
 # target to preprocess a source file
-source/studentswindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswindow.cpp.i
-.PHONY : source/studentswindow.cpp.i
+source/studentswidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswidget.cpp.i
+.PHONY : source/studentswidget.cpp.i
 
-source/studentswindow.s: source/studentswindow.cpp.s
-.PHONY : source/studentswindow.s
+source/studentswidget.s: source/studentswidget.cpp.s
+.PHONY : source/studentswidget.s
 
 # target to generate assembly for a file
-source/studentswindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswindow.cpp.s
-.PHONY : source/studentswindow.cpp.s
+source/studentswidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/studentswidget.cpp.s
+.PHONY : source/studentswidget.cpp.s
 
 source/validateinput.o: source/validateinput.cpp.o
 .PHONY : source/validateinput.o
@@ -727,6 +727,30 @@ source/validateinput.s: source/validateinput.cpp.s
 source/validateinput.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/validateinput.cpp.s
 .PHONY : source/validateinput.cpp.s
+
+source/voluntarysquadmanager.o: source/voluntarysquadmanager.cpp.o
+.PHONY : source/voluntarysquadmanager.o
+
+# target to build an object file
+source/voluntarysquadmanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o
+.PHONY : source/voluntarysquadmanager.cpp.o
+
+source/voluntarysquadmanager.i: source/voluntarysquadmanager.cpp.i
+.PHONY : source/voluntarysquadmanager.i
+
+# target to preprocess a source file
+source/voluntarysquadmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.i
+.PHONY : source/voluntarysquadmanager.cpp.i
+
+source/voluntarysquadmanager.s: source/voluntarysquadmanager.cpp.s
+.PHONY : source/voluntarysquadmanager.s
+
+# target to generate assembly for a file
+source/voluntarysquadmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dormitory.dir/build.make CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.s
+.PHONY : source/voluntarysquadmanager.cpp.s
 
 source/voluntarysquadwindow.o: source/voluntarysquadwindow.cpp.o
 .PHONY : source/voluntarysquadwindow.o
@@ -779,18 +803,15 @@ help:
 	@echo "... source/activitywindow.o"
 	@echo "... source/activitywindow.i"
 	@echo "... source/activitywindow.s"
-	@echo "... source/addstudentwindow.o"
-	@echo "... source/addstudentwindow.i"
-	@echo "... source/addstudentwindow.s"
-	@echo "... source/blockmanager.o"
-	@echo "... source/blockmanager.i"
-	@echo "... source/blockmanager.s"
+	@echo "... source/addstudentwidget.o"
+	@echo "... source/addstudentwidget.i"
+	@echo "... source/addstudentwidget.s"
 	@echo "... source/councilactivitywindow.o"
 	@echo "... source/councilactivitywindow.i"
 	@echo "... source/councilactivitywindow.s"
-	@echo "... source/createreportwindow.o"
-	@echo "... source/createreportwindow.i"
-	@echo "... source/createreportwindow.s"
+	@echo "... source/createreportwidget.o"
+	@echo "... source/createreportwidget.i"
+	@echo "... source/createreportwidget.s"
 	@echo "... source/database.o"
 	@echo "... source/database.i"
 	@echo "... source/database.s"
@@ -821,18 +842,24 @@ help:
 	@echo "... source/resident.o"
 	@echo "... source/resident.i"
 	@echo "... source/resident.s"
+	@echo "... source/studentcouncilmanager.o"
+	@echo "... source/studentcouncilmanager.i"
+	@echo "... source/studentcouncilmanager.s"
 	@echo "... source/studentinfowindow.o"
 	@echo "... source/studentinfowindow.i"
 	@echo "... source/studentinfowindow.s"
 	@echo "... source/studentresident.o"
 	@echo "... source/studentresident.i"
 	@echo "... source/studentresident.s"
-	@echo "... source/studentswindow.o"
-	@echo "... source/studentswindow.i"
-	@echo "... source/studentswindow.s"
+	@echo "... source/studentswidget.o"
+	@echo "... source/studentswidget.i"
+	@echo "... source/studentswidget.s"
 	@echo "... source/validateinput.o"
 	@echo "... source/validateinput.i"
 	@echo "... source/validateinput.s"
+	@echo "... source/voluntarysquadmanager.o"
+	@echo "... source/voluntarysquadmanager.i"
+	@echo "... source/voluntarysquadmanager.s"
 	@echo "... source/voluntarysquadwindow.o"
 	@echo "... source/voluntarysquadwindow.i"
 	@echo "... source/voluntarysquadwindow.s"

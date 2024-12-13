@@ -1,7 +1,6 @@
 #ifndef LISTITERATOR_H
 #define LISTITERATOR_H
-#include <cstddef>  // Для ptrdiff_t
-#include <iterator> // Для std::iterator_traits
+#include <cstddef>
 #include <compare>
 
 template <typename T>
@@ -10,7 +9,6 @@ private:
     T* current;
 
 public:
-    using iterator_category = std::random_access_iterator_tag;
     using value_type = T;
     using difference_type = ptrdiff_t;
     using pointer = T*;
@@ -61,7 +59,7 @@ public:
     }
 
     std::strong_ordering operator<=>(const ListIterator& other) const {
-        return current <=> other.current; // Используем стандартный оператор <=> для указателей
+        return current <=> other.current;
     }
 
     bool operator!=(const ListIterator& other) const {

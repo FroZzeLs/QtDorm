@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentsWidget</class>
+ <widget class="QWidget" name="StudentsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1639</width>
+    <height>1129</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="delAll">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>1040</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #DC143C; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 5px; /* Отступы внутри кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+QPushButton:hover {
+    background-color: #8B0000; /* Темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: red; /* Цвет при нажатии */
+}</string>
+   </property>
+   <property name="text">
+    <string>Удалить всех студентов</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="filters">
+   <property name="geometry">
+    <rect>
+     <x>1305</x>
+     <y>230</y>
+     <width>321</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #007BFF; /* Синий фон для окна */
+    border-radius: 12px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри окна */
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="surname">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="patronym">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Отчество</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="block">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Белый фон для полей ввода */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 6px; /* Закругленные углы */
+    padding: 8px; /* Отступы внутри поля */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы между полями */
+}
+
+QLineEdit:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Номер блока</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>400</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0056b3; /* Основной цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри кнопки */
+    font-size: 22px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Жирный текст */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+QPushButton:hover {
+    background-color: #004085; /* Темнее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #003366; /* Цвет при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="filtersHeader">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>-10</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFFFF;
+font-size: 24px; /* Размер шрифта кнопки */
+font-weight: bold; /* Жирный текст */</string>
+    </property>
+    <property name="text">
+     <string>Фильтры</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="mainHeader">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>20</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Студенты</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="floorNumber">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>16</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>22</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Этаж</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>149</y>
+     <width>1281</width>
+     <height>961</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="scrollLayout"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

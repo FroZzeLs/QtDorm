@@ -1,7 +1,7 @@
 #include "./../headers/voluntarysquadwindow.h"
 
-VoluntarySquadWindow::VoluntarySquadWindow(QWidget *parent) : ActivityWindow(parent) {}
+VoluntarySquadWindow::VoluntarySquadWindow(Database* db, const StudentResident& student, QWidget *parent) : ActivityWindow(db, student, parent) {}
 
 void VoluntarySquadWindow::displayActivity() {
-    activityLabel->setText("Количество ночных обходов за данный месяц");
+    activityLabel->setText("Количество ночных обходов");
 }

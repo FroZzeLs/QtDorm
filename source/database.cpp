@@ -1,5 +1,4 @@
 #include "./../headers/database.h"
-#include "./../headers/blockmanager.h"
 #include <QDebug>
 
 Database::Database(const QString& dbName, QStatusBar* statusBarPointer)
@@ -24,18 +23,8 @@ Database::~Database() {
 bool Database::createTables() {
     QSqlQuery query;
 
-    if (!query.exec("CREATE TABLE IF NOT EXISTS Blocks ("
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    "blockNumber INTEGER UNIQUE, "
-                    "residentCount INTEGER DEFAULT 0)")) {
-        qDebug() << "Ошибка создания таблицы Blocks:" << query.lastError().text();
-        statusBar->showMessage("Ошибка создания таблицы Blocks: " + query.lastError().text(), 5000);
-        return false;
-    }
-
     if (!query.exec("CREATE TABLE IF NOT EXISTS Students ("
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    "blockId INTEGER, "
                     "surname TEXT, "
                     "name TEXT, "
                     "patronym TEXT, "
@@ -44,10 +33,29 @@ bool Database::createTables() {
                     "blockNumber INTEGER, "
                     "studActive INTEGER, "
                     "opt INTEGER, "
-                    "debtor INTEGER, "
-                    "FOREIGN KEY(blockId) REFERENCES Blocks(id))")) {
+                    "debtor INTEGER)")) {
         qDebug() << "Ошибка создания таблицы Students:" << query.lastError().text();
         statusBar->showMessage("Ошибка создания таблицы Students: " + query.lastError().text(), 5000);
+        return false;
+    }
+
+    if (!query.exec("CREATE TABLE IF NOT EXISTS StudentCouncil ("
+                    "studentId INTEGER, "
+                    "events INTEGER, "
+                    "PRIMARY KEY(studentId, events), "
+                    "FOREIGN KEY(studentId) REFERENCES Students(id))")) {
+        qDebug() << "Ошибка создания таблицы studentCouncil:" << query.lastError().text();
+        statusBar->showMessage("Ошибка создания таблицы studentCouncil: " + query.lastError().text(), 5000);
+        return false;
+    }
+
+    if (!query.exec("CREATE TABLE IF NOT EXISTS VoluntarySquad ("
+                    "studentId INTEGER, "
+                    "rounds INTEGER, "
+                    "PRIMARY KEY(studentId, rounds), "
+                    "FOREIGN KEY(studentId) REFERENCES Students(id))")) {
+        qDebug() << "Ошибка создания таблицы voluntarySquad:" << query.lastError().text();
+        statusBar->showMessage("Ошибка создания таблицы voluntarySquad: " + query.lastError().text(), 5000);
         return false;
     }
 
@@ -57,11 +65,9 @@ bool Database::createTables() {
 
 bool Database::addStudent(const StudentResident& student) {
     QSqlQuery query;
-    int blockId = getOrAddBlock(this->db, student.getBlockNumber());
-    query.prepare("INSERT INTO Students (blockId, surname, name, patronym, phoneNumber, age, blockNumber, studActive, opt, debtor) "
-                  "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    query.prepare("INSERT INTO Students (surname, name, patronym, phoneNumber, age, blockNumber, studActive, opt, debtor) "
+                  "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    query.addBindValue(blockId);
     query.addBindValue(student.getSurname());
     query.addBindValue(student.getName());
     query.addBindValue(student.getPatronym());
@@ -76,11 +82,18 @@ bool Database::addStudent(const StudentResident& student) {
         qDebug() << "Ошибка добавления студента:" << query.lastError().text();
         return false;
     }
-    query.prepare("UPDATE Blocks SET residentCount = residentCount + 1 WHERE id = ?");
-    query.addBindValue(blockId);
-    if (!query.exec()) {
-        qDebug() << "Ошибка обновления информации о блоке:" << query.lastError().text();
-        return false;
+
+    if(student.getStudActive() == 1){
+        query.prepare("INSERT INTO StudentCouncil (studentId, events) "
+                      "VALUES (?, 0)");
+
+        query.addBindValue(student.getId());
+    }
+    else if(student.getStudActive() == 2){
+        query.prepare("INSERT INTO VoluntarySquad (studentId, rounds) "
+                      "VALUES (?, 0)");
+
+        query.addBindValue(student.getId());
     }
     return true;
 }
@@ -97,8 +110,13 @@ bool Database::deleteAllData() {
         return false;
     }
 
-    if (!query.exec("DELETE FROM Blocks")) {
-        qDebug() << "Ошибка при удалении данных из таблицы Blocks:" << query.lastError().text();
+    if (!query.exec("DELETE FROM StudentCouncil")) {
+        qDebug() << "Ошибка при удалении данных из таблицы StudentCouncil:" << query.lastError().text();
+        return false;
+    }
+
+    if (!query.exec("DELETE FROM VoluntarySquad")) {
+        qDebug() << "Ошибка при удалении данных из таблицы VoluntarySquad:" << query.lastError().text();
         return false;
     }
 
@@ -145,38 +163,34 @@ List<StudentResident> Database::searchStudents(int floor) {
     return students;
 }
 
-bool Database::removeStudent(int studentId) {
+bool Database::removeStudent(const StudentResident& student) {
     QSqlQuery query;
 
-    query.prepare("SELECT blockId FROM Students WHERE id = ?");
-    query.addBindValue(studentId);
-
-    if (!query.exec()) {
-        qDebug() << "Ошибка получения блока студента:" << query.lastError().text();
-        return false;
-    }
-
-    int blockId = 0;
-    if (query.next()) {
-        blockId = query.value(0).toInt();
-    } else {
-        qDebug() << "Студент с ID" << studentId << "не найден.";
-        return false; // Студент не найден
-    }
-
     query.prepare("DELETE FROM Students WHERE id = ?");
-    query.addBindValue(studentId);
+    query.addBindValue(student.getId());
 
     if (!query.exec()) {
         qDebug() << "Ошибка удаления студента:" << query.lastError().text();
         return false;
     }
 
-    query.prepare("UPDATE Blocks SET residentCount = residentCount - 1 WHERE id = ?");
-    query.addBindValue(blockId);
-    if (!query.exec()) {
-        qDebug() << "Ошибка обновления информации о блоке после удаления студента:" << query.lastError().text();
-        return false;
+    if(student.getStudActive() == 1){
+        query.prepare("DELETE FROM StudentCouncil WHERE studentId = ?");
+        query.addBindValue(student.getId());
+
+        if (!query.exec()) {
+            qDebug() << "Ошибка удаления студента:" << query.lastError().text();
+            return false;
+        }
+    }
+    else if(student.getStudActive() == 2){
+        query.prepare("DELETE FROM VoluntarySquad WHERE studentId = ?");
+        query.addBindValue(student.getId());
+
+        if (!query.exec()) {
+            qDebug() << "Ошибка удаления студента:" << query.lastError().text();
+            return false;
+        }
     }
 
     return true;
@@ -253,12 +267,10 @@ List<StudentResident> Database::searchStudents(int type, const QString& surname,
 
 bool Database::updateStudent(const StudentResident& oldInfo, const StudentResident& newInfo) {
     QSqlQuery query;
-    int newBlockId = getOrAddBlock(this->db, newInfo.getBlockNumber());
 
-    query.prepare("UPDATE Students SET blockId = ?, surname = ?, name = ?, patronym = ?, phoneNumber = ?, "
+    query.prepare("UPDATE Students surname = ?, name = ?, patronym = ?, phoneNumber = ?, "
                   "age = ?, blockNumber = ?, studActive = ?, opt = ?, debtor = ? WHERE id = ?");
 
-    query.addBindValue(newBlockId);
     query.addBindValue(newInfo.getSurname());
     query.addBindValue(newInfo.getName());
     query.addBindValue(newInfo.getPatronym());
@@ -273,25 +285,6 @@ bool Database::updateStudent(const StudentResident& oldInfo, const StudentReside
     if (!query.exec()) {
         qDebug() << "Ошибка обновления информации:" << query.lastError().text();
         return false;
-    }
-
-    if (oldInfo.getBlockNumber() != newInfo.getBlockNumber()) {
-        int oldBlockId = getOrAddBlock(db, oldInfo.getBlockNumber());
-        query.prepare("UPDATE Blocks SET residentCount = residentCount - 1 WHERE id = ?");
-        query.addBindValue(oldBlockId);
-
-        if (!query.exec()) {
-            qDebug() << "Ошибка обновления информации о блоке (уменьшение):" << query.lastError().text();
-            return false;
-        }
-
-        query.prepare("UPDATE Blocks SET residentCount = residentCount + 1 WHERE id = ?");
-        query.addBindValue(newBlockId);
-
-        if (!query.exec()) {
-            qDebug() << "Ошибка обновления информации о блоке (увеличение):" << query.lastError().text();
-            return false;
-        }
     }
     return true;
 }

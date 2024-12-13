@@ -399,6 +399,5 @@ CMakeFiles/Dormitory.dir/source/database.cpp.o: \
  /home/sergey/Dormitory/source/./../headers/person.h \
  /home/sergey/Dormitory/source/./../headers/list.h \
  /home/sergey/Dormitory/source/./../headers/listiterator.h \
- /home/sergey/Dormitory/source/./../headers/blockmanager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h

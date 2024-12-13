@@ -7,7 +7,7 @@ class VoluntarySquadWindow : public ActivityWindow {
     Q_OBJECT
 
 public:
-    explicit VoluntarySquadWindow(QWidget *parent = nullptr);
+    VoluntarySquadWindow(Database* db, const StudentResident& student, QWidget *parent = nullptr);
 
 protected:
     void displayActivity() override;

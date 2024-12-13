@@ -46,7 +46,7 @@ StudentInfoWindow::~StudentInfoWindow()
 
 void StudentInfoWindow::on_deleteButton_clicked()
 {
-    if (dtb->removeStudent(student.getId())) {
+    if (dtb->removeStudent(student)) {
         QMessageBox::information(this, "Успех", "Студент успешно удалён!");
         this->close();
     } else {
@@ -119,7 +119,7 @@ QPushButton* StudentInfoWindow::createStyledButton(int type, const QString &text
             border: none;
             border-radius: 8px;
             padding: 5px;
-            font-size: 16px;
+            font-size: 22px;
             font-weight: bold;
             margin: 5px 0;
         }
@@ -128,16 +128,16 @@ QPushButton* StudentInfoWindow::createStyledButton(int type, const QString &text
         }
     )");
 
-    button->setGeometry(190, 280, 181, 41);
+    button->setGeometry(255, 440, 251, 61);
 
-    connect(button, &QPushButton::clicked, [type, parent]() {
+    connect(button, &QPushButton::clicked, [type, parent, this]() {
         if (type == 1) {
-            CouncilActivityWindow *councilWindow = new CouncilActivityWindow();
+            CouncilActivityWindow *councilWindow = new CouncilActivityWindow(dtb, student, this);
             councilWindow->initializeActivity();
             councilWindow->show();
 
         } else if (type == 2) {
-            VoluntarySquadWindow *squadWindow = new VoluntarySquadWindow();
+            VoluntarySquadWindow *squadWindow = new VoluntarySquadWindow(dtb, student, this);
             squadWindow->initializeActivity();
             squadWindow->show();
         }

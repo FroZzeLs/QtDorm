@@ -1,8 +1,8 @@
 #include "./ui_mainwindow.h"
 #include "./../headers/mainwindow.h"
-#include "./../headers/studentswindow.h"
-#include "./../headers/addstudentwindow.h"
 #include "./../headers/reportswindow.h"
+#include "./../headers/addstudentwidget.h"
+#include "./../headers/studentswidget.h"
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -26,12 +26,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_students_clicked()
 {
-    defaultShowWindow<Students>(dtb, this);
+    defaultShowWidget<StudentsWidget>(dtb, this);
 }
 
 void MainWindow::on_addStudent_clicked()
 {
-    defaultShowWindow<AddStudentWindow>(dtb, this);
+    defaultShowWidget<AddStudentWidget>(dtb, this);
 }
 
 void MainWindow::on_closeButton_clicked()
@@ -39,15 +39,29 @@ void MainWindow::on_closeButton_clicked()
     close();
 }
 
-
 void MainWindow::on_reports_clicked()
 {
-    defaultShowWindow<ReportsWindow>(dtb, this);
+    QLayoutItem* item;
+    while ((item = ui->workLayout->takeAt(0))) {
+        delete item->widget();
+        delete item;
+    }
+
+    ReportsWindow* window = new ReportsWindow(dtb, nullptr, this);
+    ui->workLayout->addWidget(window);
+    window->show();
 }
 
 template <typename WindowType>
-void MainWindow::defaultShowWindow(Database* dtb, QWidget* current){
+void MainWindow::defaultShowWidget(Database* dtb, QWidget* current) {
+    QLayoutItem* item;
+    while ((item = ui->workLayout->takeAt(0))) {
+        delete item->widget();
+        delete item;
+    }
+
     WindowType* window = new WindowType(dtb, current);
+    ui->workLayout->addWidget(window);
     window->show();
 }
 

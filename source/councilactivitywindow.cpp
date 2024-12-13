@@ -1,6 +1,6 @@
 #include "./../headers/councilactivitywindow.h"
 
-CouncilActivityWindow::CouncilActivityWindow(QWidget *parent) : ActivityWindow(parent) {}
+CouncilActivityWindow::CouncilActivityWindow(Database* db, const StudentResident& student, QWidget *parent) : ActivityWindow(db, student, parent) {}
 
 void CouncilActivityWindow::displayActivity() {
     activityLabel->setText("Количество мероприятий");

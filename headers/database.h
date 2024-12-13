@@ -18,7 +18,7 @@ public:
     bool createTables();
     bool addStudent(const StudentResident& student);
     bool deleteAllData();
-    bool removeStudent(int studentId);
+    bool removeStudent(const StudentResident& student);
     bool updateStudent(const StudentResident& oldInfo, const StudentResident& newInfo);
 
     List<StudentResident> searchStudents(int floor);

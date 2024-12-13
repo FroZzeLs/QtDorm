@@ -214,15 +214,9 @@
 			null
 		],
 		[
-			"/home/sergey/Dormitory/headers/addstudentwindow.h",
+			"/home/sergey/Dormitory/headers/addstudentwidget.h",
 			"MU",
-			"K6S233IZAZ/moc_addstudentwindow.cpp",
-			null
-		],
-		[
-			"/home/sergey/Dormitory/headers/blockmanager.h",
-			"MU",
-			"K6S233IZAZ/moc_blockmanager.cpp",
+			"K6S233IZAZ/moc_addstudentwidget.cpp",
 			null
 		],
 		[
@@ -232,9 +226,9 @@
 			null
 		],
 		[
-			"/home/sergey/Dormitory/headers/createreportwindow.h",
+			"/home/sergey/Dormitory/headers/createreportwidget.h",
 			"MU",
-			"K6S233IZAZ/moc_createreportwindow.cpp",
+			"K6S233IZAZ/moc_createreportwidget.cpp",
 			null
 		],
 		[
@@ -310,6 +304,12 @@
 			null
 		],
 		[
+			"/home/sergey/Dormitory/headers/studentcouncilmanager.h",
+			"MU",
+			"K6S233IZAZ/moc_studentcouncilmanager.cpp",
+			null
+		],
+		[
 			"/home/sergey/Dormitory/headers/studentinfowindow.h",
 			"MU",
 			"K6S233IZAZ/moc_studentinfowindow.cpp",
@@ -322,15 +322,21 @@
 			null
 		],
 		[
-			"/home/sergey/Dormitory/headers/studentswindow.h",
+			"/home/sergey/Dormitory/headers/studentswidget.h",
 			"MU",
-			"K6S233IZAZ/moc_studentswindow.cpp",
+			"K6S233IZAZ/moc_studentswidget.cpp",
 			null
 		],
 		[
 			"/home/sergey/Dormitory/headers/validateinput.h",
 			"MU",
 			"K6S233IZAZ/moc_validateinput.cpp",
+			null
+		],
+		[
+			"/home/sergey/Dormitory/headers/voluntarysquadmanager.h",
+			"MU",
+			"K6S233IZAZ/moc_voluntarysquadmanager.cpp",
 			null
 		],
 		[
@@ -401,10 +407,9 @@
 	[
 		[ "/home/sergey/Dormitory/main.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/activitywindow.cpp", "MU", null ],
-		[ "/home/sergey/Dormitory/source/addstudentwindow.cpp", "MU", null ],
-		[ "/home/sergey/Dormitory/source/blockmanager.cpp", "MU", null ],
+		[ "/home/sergey/Dormitory/source/addstudentwidget.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/councilactivitywindow.cpp", "MU", null ],
-		[ "/home/sergey/Dormitory/source/createreportwindow.cpp", "MU", null ],
+		[ "/home/sergey/Dormitory/source/createreportwidget.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/database.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/inputexception.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/invalidnameexception.cpp", "MU", null ],
@@ -423,10 +428,12 @@
 		[ "/home/sergey/Dormitory/source/person.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/reportswindow.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/resident.cpp", "MU", null ],
+		[ "/home/sergey/Dormitory/source/studentcouncilmanager.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/studentinfowindow.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/studentresident.cpp", "MU", null ],
-		[ "/home/sergey/Dormitory/source/studentswindow.cpp", "MU", null ],
+		[ "/home/sergey/Dormitory/source/studentswidget.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/validateinput.cpp", "MU", null ],
+		[ "/home/sergey/Dormitory/source/voluntarysquadmanager.cpp", "MU", null ],
 		[ "/home/sergey/Dormitory/source/voluntarysquadwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

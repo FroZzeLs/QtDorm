@@ -1,5 +1,11 @@
 /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_activitywindow.cpp: /home/sergey/Dormitory/headers/activitywindow.h \
   /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/moc_predefs.h \
+  /home/sergey/Dormitory/headers/database.h \
+  /home/sergey/Dormitory/headers/list.h \
+  /home/sergey/Dormitory/headers/listiterator.h \
+  /home/sergey/Dormitory/headers/person.h \
+  /home/sergey/Dormitory/headers/resident.h \
+  /home/sergey/Dormitory/headers/studentresident.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -284,6 +290,7 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -398,14 +405,25 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlerror.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStatusBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
@@ -414,6 +432,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

@@ -111,24 +111,10 @@ CMakeFiles/Dormitory.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/main.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/main.cpp -o CMakeFiles/Dormitory.dir/main.cpp.s
 
-CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
-CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o: /home/sergey/Dormitory/source/addstudentwindow.cpp
-CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o -c /home/sergey/Dormitory/source/addstudentwindow.cpp
-
-CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/addstudentwindow.cpp > CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.i
-
-CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/addstudentwindow.cpp -o CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.s
-
 CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o: /home/sergey/Dormitory/source/mainwindow.cpp
 CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o -c /home/sergey/Dormitory/source/mainwindow.cpp
 
 CMakeFiles/Dormitory.dir/source/mainwindow.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/Dormitory.dir/source/mainwindow.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o: /home/sergey/Dormitory/source/reportswindow.cpp
 CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o -c /home/sergey/Dormitory/source/reportswindow.cpp
 
 CMakeFiles/Dormitory.dir/source/reportswindow.cpp.i: cmake_force
@@ -153,24 +139,10 @@ CMakeFiles/Dormitory.dir/source/reportswindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/reportswindow.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/reportswindow.cpp -o CMakeFiles/Dormitory.dir/source/reportswindow.cpp.s
 
-CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
-CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o: /home/sergey/Dormitory/source/studentswindow.cpp
-CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o -c /home/sergey/Dormitory/source/studentswindow.cpp
-
-CMakeFiles/Dormitory.dir/source/studentswindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/studentswindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/studentswindow.cpp > CMakeFiles/Dormitory.dir/source/studentswindow.cpp.i
-
-CMakeFiles/Dormitory.dir/source/studentswindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/studentswindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/studentswindow.cpp -o CMakeFiles/Dormitory.dir/source/studentswindow.cpp.s
-
 CMakeFiles/Dormitory.dir/source/database.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/database.cpp.o: /home/sergey/Dormitory/source/database.cpp
 CMakeFiles/Dormitory.dir/source/database.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Dormitory.dir/source/database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Dormitory.dir/source/database.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/database.cpp.o -MF CMakeFiles/Dormitory.dir/source/database.cpp.o.d -o CMakeFiles/Dormitory.dir/source/database.cpp.o -c /home/sergey/Dormitory/source/database.cpp
 
 CMakeFiles/Dormitory.dir/source/database.cpp.i: cmake_force
@@ -184,7 +156,7 @@ CMakeFiles/Dormitory.dir/source/database.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/person.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/person.cpp.o: /home/sergey/Dormitory/source/person.cpp
 CMakeFiles/Dormitory.dir/source/person.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Dormitory.dir/source/person.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Dormitory.dir/source/person.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/person.cpp.o -MF CMakeFiles/Dormitory.dir/source/person.cpp.o.d -o CMakeFiles/Dormitory.dir/source/person.cpp.o -c /home/sergey/Dormitory/source/person.cpp
 
 CMakeFiles/Dormitory.dir/source/person.cpp.i: cmake_force
@@ -198,7 +170,7 @@ CMakeFiles/Dormitory.dir/source/person.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/resident.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/resident.cpp.o: /home/sergey/Dormitory/source/resident.cpp
 CMakeFiles/Dormitory.dir/source/resident.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Dormitory.dir/source/resident.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Dormitory.dir/source/resident.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/resident.cpp.o -MF CMakeFiles/Dormitory.dir/source/resident.cpp.o.d -o CMakeFiles/Dormitory.dir/source/resident.cpp.o -c /home/sergey/Dormitory/source/resident.cpp
 
 CMakeFiles/Dormitory.dir/source/resident.cpp.i: cmake_force
@@ -212,7 +184,7 @@ CMakeFiles/Dormitory.dir/source/resident.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/logic.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/logic.cpp.o: /home/sergey/Dormitory/source/logic.cpp
 CMakeFiles/Dormitory.dir/source/logic.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Dormitory.dir/source/logic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Dormitory.dir/source/logic.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/logic.cpp.o -MF CMakeFiles/Dormitory.dir/source/logic.cpp.o.d -o CMakeFiles/Dormitory.dir/source/logic.cpp.o -c /home/sergey/Dormitory/source/logic.cpp
 
 CMakeFiles/Dormitory.dir/source/logic.cpp.i: cmake_force
@@ -226,7 +198,7 @@ CMakeFiles/Dormitory.dir/source/logic.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/studentresident.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/studentresident.cpp.o: /home/sergey/Dormitory/source/studentresident.cpp
 CMakeFiles/Dormitory.dir/source/studentresident.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Dormitory.dir/source/studentresident.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Dormitory.dir/source/studentresident.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/studentresident.cpp.o -MF CMakeFiles/Dormitory.dir/source/studentresident.cpp.o.d -o CMakeFiles/Dormitory.dir/source/studentresident.cpp.o -c /home/sergey/Dormitory/source/studentresident.cpp
 
 CMakeFiles/Dormitory.dir/source/studentresident.cpp.i: cmake_force
@@ -237,24 +209,10 @@ CMakeFiles/Dormitory.dir/source/studentresident.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/studentresident.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/studentresident.cpp -o CMakeFiles/Dormitory.dir/source/studentresident.cpp.s
 
-CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o: CMakeFiles/Dormitory.dir/flags.make
-CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o: /home/sergey/Dormitory/source/blockmanager.cpp
-CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o -MF CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o.d -o CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o -c /home/sergey/Dormitory/source/blockmanager.cpp
-
-CMakeFiles/Dormitory.dir/source/blockmanager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/blockmanager.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/blockmanager.cpp > CMakeFiles/Dormitory.dir/source/blockmanager.cpp.i
-
-CMakeFiles/Dormitory.dir/source/blockmanager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/blockmanager.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/blockmanager.cpp -o CMakeFiles/Dormitory.dir/source/blockmanager.cpp.s
-
 CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o: /home/sergey/Dormitory/source/studentinfowindow.cpp
 CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o -c /home/sergey/Dormitory/source/studentinfowindow.cpp
 
 CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.i: cmake_force
@@ -268,7 +226,7 @@ CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o: /home/sergey/Dormitory/source/activitywindow.cpp
 CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o -c /home/sergey/Dormitory/source/activitywindow.cpp
 
 CMakeFiles/Dormitory.dir/source/activitywindow.cpp.i: cmake_force
@@ -282,7 +240,7 @@ CMakeFiles/Dormitory.dir/source/activitywindow.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o: /home/sergey/Dormitory/source/voluntarysquadwindow.cpp
 CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o -c /home/sergey/Dormitory/source/voluntarysquadwindow.cpp
 
 CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.i: cmake_force
@@ -296,7 +254,7 @@ CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o: /home/sergey/Dormitory/source/councilactivitywindow.cpp
 CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.o -c /home/sergey/Dormitory/source/councilactivitywindow.cpp
 
 CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.i: cmake_force
@@ -310,7 +268,7 @@ CMakeFiles/Dormitory.dir/source/councilactivitywindow.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/inputexception.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/inputexception.cpp.o: /home/sergey/Dormitory/source/inputexception.cpp
 CMakeFiles/Dormitory.dir/source/inputexception.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Dormitory.dir/source/inputexception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Dormitory.dir/source/inputexception.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/inputexception.cpp.o -MF CMakeFiles/Dormitory.dir/source/inputexception.cpp.o.d -o CMakeFiles/Dormitory.dir/source/inputexception.cpp.o -c /home/sergey/Dormitory/source/inputexception.cpp
 
 CMakeFiles/Dormitory.dir/source/inputexception.cpp.i: cmake_force
@@ -324,7 +282,7 @@ CMakeFiles/Dormitory.dir/source/inputexception.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o: /home/sergey/Dormitory/source/invalidnameexception.cpp
 CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o -MF CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o.d -o CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o -c /home/sergey/Dormitory/source/invalidnameexception.cpp
 
 CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.i: cmake_force
@@ -338,7 +296,7 @@ CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o: /home/sergey/Dormitory/source/invalidphonenumberexception.cpp
 CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o -MF CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o.d -o CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o -c /home/sergey/Dormitory/source/invalidphonenumberexception.cpp
 
 CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.i: cmake_force
@@ -352,7 +310,7 @@ CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o: /home/sergey/Dormitory/source/invalidnumberexception.cpp
 CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o -MF CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o.d -o CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o -c /home/sergey/Dormitory/source/invalidnumberexception.cpp
 
 CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.i: cmake_force
@@ -366,7 +324,7 @@ CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.s: cmake_force
 CMakeFiles/Dormitory.dir/source/validateinput.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/source/validateinput.cpp.o: /home/sergey/Dormitory/source/validateinput.cpp
 CMakeFiles/Dormitory.dir/source/validateinput.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Dormitory.dir/source/validateinput.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Dormitory.dir/source/validateinput.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/validateinput.cpp.o -MF CMakeFiles/Dormitory.dir/source/validateinput.cpp.o.d -o CMakeFiles/Dormitory.dir/source/validateinput.cpp.o -c /home/sergey/Dormitory/source/validateinput.cpp
 
 CMakeFiles/Dormitory.dir/source/validateinput.cpp.i: cmake_force
@@ -377,24 +335,80 @@ CMakeFiles/Dormitory.dir/source/validateinput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/validateinput.cpp.s"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/validateinput.cpp -o CMakeFiles/Dormitory.dir/source/validateinput.cpp.s
 
-CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/flags.make
-CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: /home/sergey/Dormitory/source/createreportwindow.cpp
-CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o -MF CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o.d -o CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o -c /home/sergey/Dormitory/source/createreportwindow.cpp
+CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o: /home/sergey/Dormitory/source/addstudentwidget.cpp
+CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o -MF CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o.d -o CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o -c /home/sergey/Dormitory/source/addstudentwidget.cpp
 
-CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/createreportwindow.cpp > CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.i
+CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/addstudentwidget.cpp > CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.i
 
-CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s"
-	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/createreportwindow.cpp -o CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.s
+CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/addstudentwidget.cpp -o CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.s
+
+CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o: /home/sergey/Dormitory/source/createreportwidget.cpp
+CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o -MF CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o.d -o CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o -c /home/sergey/Dormitory/source/createreportwidget.cpp
+
+CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/createreportwidget.cpp > CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.i
+
+CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/createreportwidget.cpp -o CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.s
+
+CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o: /home/sergey/Dormitory/source/studentswidget.cpp
+CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o -MF CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o.d -o CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o -c /home/sergey/Dormitory/source/studentswidget.cpp
+
+CMakeFiles/Dormitory.dir/source/studentswidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/studentswidget.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/studentswidget.cpp > CMakeFiles/Dormitory.dir/source/studentswidget.cpp.i
+
+CMakeFiles/Dormitory.dir/source/studentswidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/studentswidget.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/studentswidget.cpp -o CMakeFiles/Dormitory.dir/source/studentswidget.cpp.s
+
+CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o: /home/sergey/Dormitory/source/studentcouncilmanager.cpp
+CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o -MF CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o.d -o CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o -c /home/sergey/Dormitory/source/studentcouncilmanager.cpp
+
+CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/studentcouncilmanager.cpp > CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.i
+
+CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/studentcouncilmanager.cpp -o CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.s
+
+CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o: CMakeFiles/Dormitory.dir/flags.make
+CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o: /home/sergey/Dormitory/source/voluntarysquadmanager.cpp
+CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o -MF CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o.d -o CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o -c /home/sergey/Dormitory/source/voluntarysquadmanager.cpp
+
+CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.i"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/Dormitory/source/voluntarysquadmanager.cpp > CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.i
+
+CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.s"
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/Dormitory/source/voluntarysquadmanager.cpp -o CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.s
 
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o: CMakeFiles/Dormitory.dir/flags.make
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o: Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o: CMakeFiles/Dormitory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o"
 	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o -MF CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o.d -o CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o -c /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp
 
 CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.i: cmake_force
@@ -409,16 +423,13 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.s: cmake_
 Dormitory_OBJECTS = \
 "CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/Dormitory.dir/main.cpp.o" \
-"CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o" \
-"CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/database.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/person.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/resident.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/logic.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/studentresident.cpp.o" \
-"CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o" \
@@ -428,7 +439,11 @@ Dormitory_OBJECTS = \
 "CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o" \
 "CMakeFiles/Dormitory.dir/source/validateinput.cpp.o" \
-"CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o" \
+"CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o" \
 "CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o"
 
 # External object files for target Dormitory
@@ -436,16 +451,13 @@ Dormitory_EXTERNAL_OBJECTS =
 
 Dormitory: CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/main.cpp.o
-Dormitory: CMakeFiles/Dormitory.dir/source/addstudentwindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/mainwindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/reportswindow.cpp.o
-Dormitory: CMakeFiles/Dormitory.dir/source/studentswindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/database.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/person.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/resident.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/logic.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/studentresident.cpp.o
-Dormitory: CMakeFiles/Dormitory.dir/source/blockmanager.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/studentinfowindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/activitywindow.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/voluntarysquadwindow.cpp.o
@@ -455,7 +467,11 @@ Dormitory: CMakeFiles/Dormitory.dir/source/invalidnameexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/invalidphonenumberexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/invalidnumberexception.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/source/validateinput.cpp.o
-Dormitory: CMakeFiles/Dormitory.dir/source/createreportwindow.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/addstudentwidget.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/createreportwidget.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/studentswidget.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/studentcouncilmanager.cpp.o
+Dormitory: CMakeFiles/Dormitory.dir/source/voluntarysquadmanager.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/Dormitory_autogen/EWIEGA46WW/qrc_resource.cpp.o
 Dormitory: CMakeFiles/Dormitory.dir/build.make
 Dormitory: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
@@ -465,7 +481,7 @@ Dormitory: /usr/lib/x86_64-linux-gnu/libGLX.so
 Dormitory: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Dormitory: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Dormitory: CMakeFiles/Dormitory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable Dormitory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sergey/Dormitory/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable Dormitory"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Dormitory.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

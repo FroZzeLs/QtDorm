@@ -197,8 +197,8 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/activitywindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -257,6 +257,7 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
@@ -390,7 +391,6 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
@@ -406,17 +406,9 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_addstudentwindow.cpp \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/addstudentwindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/studentresident.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/resident.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/person.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/database.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
@@ -432,16 +424,24 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStatusBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/studentresident.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/resident.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/person.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/list.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/listiterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_addstudentwidget.cpp \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/addstudentwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_councilactivitywindow.cpp \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/councilactivitywindow.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/activitywindow.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_createreportwindow.cpp \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/createreportwindow.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_createreportwidget.cpp \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/createreportwidget.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_mainwindow.cpp \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -451,8 +451,8 @@ CMakeFiles/Dormitory.dir/Dormitory_autogen/mocs_compilation.cpp.o: \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/reportswindow.h \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_studentinfowindow.cpp \
  /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/studentinfowindow.h \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_studentswindow.cpp \
- /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/studentswindow.h \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/moc_studentswidget.cpp \
+ /home/sergey/Dormitory/build/Desktop-Debug/Dormitory_autogen/K6S233IZAZ/../../../../headers/studentswidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \

@@ -66,11 +66,11 @@ include CMakeFiles/Dormitory_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Dormitory_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+CMakeFiles/Dormitory_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 Dormitory_autogen_timestamp_deps: CMakeFiles/Dormitory_autogen_timestamp_deps
 Dormitory_autogen_timestamp_deps: CMakeFiles/Dormitory_autogen_timestamp_deps.dir/build.make

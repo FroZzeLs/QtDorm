@@ -21,10 +21,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Dormitory
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        source/addstudentwindow.cpp headers/addstudentwindow.h ui/addstudentwindow.ui
-        source/mainwindow.cpp headers/mainwindow.h ui/mainwindow.ui
-        source/reportswindow.cpp headers/reportswindow.h ui/reportswindow.ui
-        source/studentswindow.cpp headers/studentswindow.h ui/studentswindow.ui
+
+        source/mainwindow.cpp headers/mainwindow.h source/mainwindow.ui
+        source/reportswindow.cpp headers/reportswindow.h source/reportswindow.ui
+
         main.cpp
         resource.qrc
         source/database.cpp headers/database.h
@@ -32,9 +32,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         headers/resident.h source/resident.cpp
         headers/logic.h source/logic.cpp
         headers/studentresident.h source/studentresident.cpp
-        headers/blockmanager.h source/blockmanager.cpp
 
-        headers/studentinfowindow.h source/studentinfowindow.cpp ui/studentinfowindow.ui
+
+        headers/studentinfowindow.h source/studentinfowindow.cpp source/studentinfowindow.ui
         headers/activitywindow.h source/activitywindow.cpp
 
         headers/voluntarysquadwindow.h source/voluntarysquadwindow.cpp
@@ -45,8 +45,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         headers/invalidphonenumberexception.h source/invalidphonenumberexception.cpp
         headers/invalidnumberexception.h source/invalidnumberexception.cpp
         headers/validateinput.h source/validateinput.cpp
-        source/createreportwindow.cpp headers/createreportwindow.h source/createreportwindow.ui
+
         headers/listiterator.h
+        headers/addstudentwidget.h source/addstudentwidget.cpp source/addstudentwidget.ui
+        headers/createreportwidget.h source/createreportwidget.cpp source/createreportwidget.ui
+        headers/studentswidget.h source/studentswidget.cpp source/studentswidget.ui
+        headers/studentcouncilmanager.h source/studentcouncilmanager.cpp
+        headers/voluntarysquadmanager.h source/voluntarysquadmanager.cpp
 
 
 
